@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="text-center mx-auto pb-5" style={{maxWidth: "800px"}}>
               <p className="text-uppercase  fs-5 mb-0" style={{ color: "#FF5E15" }}>Let's Connect</p>
               <h2 className="display-4 text-capitalize mb-3" style={{ color: "#001659" }}>Send Your Message</h2>
-              <p className="mb-0">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
+              <p className="mb-0">Contact JCM Import Export Hub today for seamless global trade solutions and expert guidance on international shipping and customs clearance..</p>
             </div>
             <form>
               <div className="row g-3">
