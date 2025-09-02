@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import jcmlogo from "../../assets/img/jcm-logo.png";
+import jcmlogo from "../../assets/img/logo-jcm.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

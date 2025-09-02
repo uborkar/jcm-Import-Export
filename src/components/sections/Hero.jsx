@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import carousel1 from '../../assets/img/Hero-1.jpg';
-import carousel2 from '../../assets/img/Hero2.jpg';
-import carousel3 from '../../assets/img/Hero3.jpg';
+import carousel2 from '../../assets/img/Hero-2.jpg';
+import carousel3 from '../../assets/img/Hero-3.jpg';
 
 const Hero = () => {
   // Hover handlers for carousel nav buttons

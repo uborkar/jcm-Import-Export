@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import aboutImage from "../../assets/img/roadtruck_re.jpg";
 import aboutImage3 from "../../assets/img/train_re.jpg";
-import aboutImage1 from "../../assets/img/logistics1.jpg";
-import aboutImage2 from "../../assets/img/Hero1.jpg";
+import aboutImage1 from "../../assets/img/logistics-1.jpg";
+import aboutImage2 from "../../assets/img/Hero-1.jpg";
 
 const About = () => {
   const [hover, setHover] = useState(false);
