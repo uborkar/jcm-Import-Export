@@ -16,7 +16,7 @@ import ServicesPage from "./components/pages/ServicesPage";
 import ExportServicesPage from "./components/pages/ExportServicesPage";
 import ImportServicesPage from "./components/pages/ImportServicesPage";
 import ValueAddedServicesPage from "./components/pages/ValueAddedServicesPage";
-
+import BusinessPage from "./components/pages/BusinessPage";
 import ProjectsPage from "./components/pages/ProjectsPage";
 import BlogPage from "./components/pages/BlogPage";
 import TradeTrendsArticle from "./components/pages/TradeTrendsArticle";
@@ -28,10 +28,19 @@ import FeaturePage from "./components/pages/FeaturePage";
 import ContactPage from "./components/pages/ContactPage";
 import NotFound from "./components/pages/NotFound";
 
+// Import OurBusiness pages - FIXED IMPORTS
+import AgroFood from "./components/pages/OurBusiness/Agrofood";
+import Textile from "./components/pages/OurBusiness/Textile";
+import Midc from "./components/pages/OurBusiness/Midc";
+import Global from "./components/pages/OurBusiness/Global";
+import Chemicals from "./components/pages/OurBusiness/Chemical";
+import Logistics from "./components/pages/OurBusiness/Logistics";
+
 // Import ONLY essential CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css/animate.min.css";
 import "./assets/css/style.css";
+import BusinessSection from "./components/sections/BusinessSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -129,8 +138,16 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/our-business" element={<BusinessPage />} />
           <Route path="/export-services" element={<ExportServicesPage />} />
           <Route path="/import-services" element={<ImportServicesPage />} />
+          {/* REMOVED DUPLICATE ROUTE: <Route path="/our-business" element={<OurBusiness />} /> */}
+          <Route path="/food-agro" element={<AgroFood />} />
+          <Route path="/Textile" element={<Textile />} />
+          <Route path="/Midc" element={<Midc />} />
+          <Route path="/global-market" element={<Global />} />
+          <Route path="/chemical" element={<Chemicals />} />
+          <Route path="/logistics" element={<Logistics />} />
           <Route
             path="/value-added-services"
             element={<ValueAddedServicesPage />}

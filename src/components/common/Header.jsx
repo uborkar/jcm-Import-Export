@@ -16,7 +16,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-light py-3 px-4">
           <Link to="/" className="navbar-brand p-0">
             <div style={{ display: "flex", alignItems: "center" }}>
-              <img
+              {/* <img
                 src={jcmlogo}
                 alt="JCM Logo"
                 style={{
@@ -25,7 +25,7 @@ const Header = () => {
                   objectFit: "contain",
                   marginRight: "10px",
                 }}
-              />
+              /> */}
               <h1 className="display-6 m-0" style={{ color: "#FF5E15" }}>
                 JCM
               </h1>
@@ -58,46 +58,48 @@ const Header = () => {
               >
                 Services
               </Link>
-              {/* <Link
-                to="/projects"
-                className={`nav-item nav-link ${isActive("/projects")}`}
-              >
-                Projects
-              </Link> */}
-              {/* <div className="nav-item dropdown">
+
+              <div className="nav-item dropdown">
                 <Link
-                  to="#"
+                  to="/our-business"
                   className={`nav-link dropdown-toggle text-dark ${
-                    isActive("/feature") ||
-                    isActive("/blog") ||
-                    isActive("/team") ||
-                    isActive("/testimonial") ||
-                    isActive("/404")
+                    isActive("/our-business") ||
+                    isActive("/food-agro") ||
+                    isActive("/Textile") ||
+                    isActive("/Midc") ||
+                    isActive("/global-market") ||
+                    isActive("/chemical")
                       ? "active"
                       : ""
                   }`}
                   data-bs-toggle="dropdown"
                 >
-                  Pages
+                  Our Business
                 </Link>
                 <div className="dropdown-menu m-lg-0">
-                  <Link to="/feature" className="dropdown-item">
-                    Our Features
+                  <Link to="/food-agro" className="dropdown-item">
+                    Agro & Food Products
                   </Link>
-                  <Link to="/blog" className="dropdown-item">
-                    Our Blog
+                  <Link to="/Textile" className="dropdown-item">
+                    Textile & Garments
                   </Link>
-                  <Link to="/team" className="dropdown-item">
-                    Our Team
+                  <Link to="/Midc" className="dropdown-item">
+                    Industrial Goods
                   </Link>
-                  <Link to="/testimonial" className="dropdown-item">
-                    Testimonial
+                  <Link to="/global-market" className="dropdown-item">
+                    Global Market Entry Support
                   </Link>
-                  <Link to="/404" className="dropdown-item">
-                    404 Page
+                  <Link to="/chemical" className="dropdown-item">
+                    Chemicals & Raw Materials
                   </Link>
                 </div>
-              </div> */}
+              </div>
+              <Link
+                to="/projects"
+                className={`nav-item nav-link ${isActive("/projects")}`}
+              >
+                Leadership
+              </Link>
               <Link
                 to="/contact"
                 className={`nav-item nav-link ${isActive("/contact")}`}
@@ -110,10 +112,10 @@ const Header = () => {
                 className="btn btn-primary py-2 px-3"
                 data-bs-toggle="modal"
                 data-bs-target="#searchModal"
-                style={{ 
-                  backgroundColor: "#001659", 
+                style={{
+                  backgroundColor: "#001659",
                   borderRadius: "0",
-                  border: "none"
+                  border: "none",
                 }}
               >
                 <i className="fas fa-search"></i>
@@ -121,11 +123,11 @@ const Header = () => {
               <Link
                 to="/contact"
                 className="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0"
-                style={{ 
-                  backgroundColor: "#FF5E15", 
+                style={{
+                  backgroundColor: "#FF5E15",
                   borderRadius: "0",
                   color: "white",
-                  textDecoration: "none"
+                  textDecoration: "none",
                 }}
               >
                 Enquire Now

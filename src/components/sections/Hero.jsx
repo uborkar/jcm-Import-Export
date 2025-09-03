@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import carousel1 from '../../assets/img/Hero-1.jpg';
-import carousel2 from '../../assets/img/Hero-2.jpg';
-import carousel3 from '../../assets/img/Hero-3.jpg';
+import carousel2 from '../../assets/img/Hero-3.jpg';
+import carousel3 from '../../assets/img/Hero-2.jpg';
 
 const Hero = () => {
   // Hover handlers for carousel nav buttons
@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <div className="container-fluid overflow-hidden px-0">
       <div id="carouselId" className="carousel slide" data-bs-ride="carousel">
-        <ol className="carousel-indicators fadeInUp animate__animated" style={{animationDelay: "1s"}}>
+        <ol className="carousel-indicators fadeInUp animate__animated" style={{animationDelay: "2s"}}>
           <li data-bs-target="#carouselId" data-bs-slide-to="0" className="active" aria-current="true"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
@@ -55,17 +55,17 @@ const Hero = () => {
           <div className="carousel-item">
             <img src={carousel3} className="img-fluid w-100" alt="Modern building construction"/>
             <div className="carousel-caption">
-              <p className="text-uppercase fs-4 mb-0" style={{color: "#ff5e15"}}>Import Export Hub</p>
+              <p className="text-uppercase fs-4 mb-0" style={{color: "#ff5e15"}}>Our Businesses</p>
               <h1 className="display-1 text-capitalize text-white mb-4">Seamless Logistics. Smarter Trade</h1>
               <p className="mb-5 fs-5">Emphasizes smooth operations and efficiency in logistics & trade...</p>
               <div className="d-flex justify-content-center">
-                <Link to="/contact"
+                <Link to="/our-business"
                   className="btn d-inline-block py-3 px-5 ms-2 flex-shrink-0"
                   style={{backgroundColor: "#ff5e15", color: "white", border: "none", borderRadius: "0", textDecoration: "none"}}
                   onMouseEnter={(e) => handleBtnEnter(e, "#001248")}
                   onMouseLeave={(e) => handleBtnLeave(e, "#FF5E15")}
                 >
-                  Contact Us
+                  Explore Now
                 </Link>
               </div>
             </div>
