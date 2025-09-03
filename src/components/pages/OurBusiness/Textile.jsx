@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import img1 from "../../../assets/img/fabric-1.jpg";
+
 
 export const Textile = () => {
   return (
@@ -19,7 +21,7 @@ export const Textile = () => {
             </Col>
             <Col lg={6}>
               <img 
-                src="https://images.unsplash.com/photo-1505902987837-52cff4f09182?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src={img1}
                 alt="Textile Products" 
                 className="img-fluid rounded shadow"
               />

@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import img1 from "../../../assets/img/machine.jpg";
+
 
 // Midc Page (Industrial Goods)
 export const Midc = () => {
@@ -11,16 +13,16 @@ export const Midc = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6}>
-              <h1 className="display-4 fw-bold text-primary mb-4">Industrial Goods</h1>
+              <h1 className="display-4 fw-bold  mb-4" style={{ color: "#001659" }}>Industrial Goods</h1>
               <p className="lead mb-4">
                 Durable industrial goods and equipment for various sectors including manufacturing, 
                 construction, and infrastructure development.
               </p>
-              <Button variant="primary" size="lg">View Products</Button>
+              <Button variant="primary" size="lg" style={{ backgroundColor: "#001659", borderRadius:"0" }}>View Products</Button>
             </Col>
             <Col lg={6}>
               <img 
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            src={img1}
                 alt="Industrial Goods" 
                 className="img-fluid rounded shadow"
               />

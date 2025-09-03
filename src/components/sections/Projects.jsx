@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import project1 from '../../assets/img/project-1.jpg';
-import project2 from '../../assets/img/project-2.jpg';
-import project3 from '../../assets/img/project-3.jpg';
-import project4 from '../../assets/img/project-4.jpg';
+import project1 from '../../assets/img/testimonial-2.jpg';
+import project2 from '../../assets/img/testimonial-4.jpg';
+import project3 from '../../assets/img/testimonial-3.jpg';
+import project4 from '../../assets/img/testimonial-1.jpg';
 
 const Projects = () => {
 
@@ -13,8 +13,8 @@ const Projects = () => {
     <div className="container-fluid project py-5">
       <div className="container py-5">
         <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{maxWidth: "800px"}}>
-          <p className="text-uppercase fs-5 mb-0"  style={{color: "#FF5E15"}}>Our Projects</p>
-          <h2 className="display-4 text-capitalize mb-3"  style={{color: "#001659"}}>Recent Completed Projects</h2>
+          <p className="text-uppercase fs-5 mb-0"  style={{color: "#FF5E15"}}>Our Legacy</p>
+          {/* <h2 className="display-4 text-capitalize mb-3"  style={{color: "#001659"}}>Recent Completed Projects</h2> */}
         </div>
         <div className="row g-5">
           
@@ -29,8 +29,8 @@ const Projects = () => {
                 </div>
                 <div className="col-md-8">
                   <div className="project-content mb-4">
-                    <p className="fs-5  mb-2"  style={{color: "#FF5E15"}}>Architecture</p>
-                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>We Building Everything</a>
+                    <p className="fs-5  mb-2"  style={{color: "#FF5E15"}}>Founder & Chairman</p>
+                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>Raj Singh Rajput</a>
                     <p className="mb-0 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore perferendis velit minus, perspiciatis eveniet adipisci tempora voluptatem quis dolores.</p>
                   </div>
                   <a 
@@ -62,8 +62,8 @@ const Projects = () => {
                 </div>
                 <div className="col-md-8">
                   <div className="project-content mb-4">
-                    <p className="fs-5 mb-2"  style={{color: "#FF5E15"}}>Interior Design</p>
-                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>We Building Everything</a>
+                    <p className="fs-5 mb-2"  style={{color: "#FF5E15"}}>Chairman</p>
+                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>Sameer</a>
                     <p className="mb-0 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore perferendis velit minus, perspiciatis eveniet adipisci tempora voluptatem quis dolores.</p>
                   </div>
                   <a 
@@ -95,8 +95,8 @@ const Projects = () => {
                 </div>
                 <div className="col-md-8">
                   <div className="project-content mb-4">
-                    <p className="fs-5  mb-2"  style={{color: "#FF5E15"}}>House & Exterior</p>
-                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>We Building Everything</a>
+                    <p className="fs-5  mb-2"  style={{color: "#FF5E15"}}>Executive Director</p>
+                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>Anushriya</a>
                     <p className="mb-0 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore perferendis velit minus, perspiciatis eveniet adipisci tempora voluptatem quis dolores.</p>
                   </div>
                   <a 
@@ -128,8 +128,8 @@ const Projects = () => {
                 </div>
                 <div className="col-md-8">
                   <div className="project-content mb-4">
-                    <p className="fs-5  mb-2"  style={{color: "#FF5E15"}}>Interior Design</p>
-                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>We Building Everything</a>
+                    <p className="fs-5  mb-2"  style={{color: "#FF5E15"}}>Managing Director</p>
+                    <a href="#" className="h4"  style={{color: "#001659", textDecoration: "none"}}>Clara</a>
                     <p className="mb-0 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore perferendis velit minus, perspiciatis eveniet adipisci tempora voluptatem quis dolores.</p>
                   </div>
                   <a 
@@ -151,7 +151,7 @@ const Projects = () => {
           </div>
 
           {/* Last "More Projects" Button */}
-          <div className="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+          {/* <div className="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
             <a 
               className="btn btn-secondary py-3 px-5" 
               href="#"  
@@ -165,7 +165,7 @@ const Projects = () => {
             >
               More Projects
             </a>
-          </div>
+          </div> */}
 
         </div>
       </div>

@@ -11,12 +11,12 @@ export const GlobalMarket = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6}>
-              <h1 className="display-4 fw-bold text-primary mb-4">Global Market Entry Support</h1>
+              <h1 className="display-4 fw-bold  mb-4" style={{ color: "#001659" }}>Global Market Entry Support</h1>
               <p className="lead mb-4">
                 Comprehensive support services for businesses looking to enter new international markets, 
                 with expertise in regulations, logistics, and market strategy.
               </p>
-              <Button variant="primary" size="lg">Start Expanding</Button>
+              <Button variant="primary" size="lg" style={{ backgroundColor: "#001659", borderRadius:"0" }}>Start Expanding</Button>
             </Col>
             <Col lg={6}>
               <img 

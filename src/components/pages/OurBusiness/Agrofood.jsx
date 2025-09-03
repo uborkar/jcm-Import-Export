@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import img1 from "../../../assets/img/food-agro.jpg";
 
 // FoodAgro Page
 export const FoodAgro = () => {
@@ -11,16 +12,16 @@ export const FoodAgro = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6}>
-              <h1 className="display-4 fw-bold text-primary mb-4">Agro & Food Products</h1>
+              <h1 className="display-4 fw-bold  mb-4" style={{ color: "#001659" }}>Agro & Food Products</h1>
               <p className="lead mb-4">
                 We source and export high-quality agricultural and food products from trusted suppliers worldwide, 
                 ensuring the finest quality reaches your table.
               </p>
-              <Button variant="primary" size="lg">Get Quote</Button>
+              <Button variant="primary" size="lg" style={{ backgroundColor: "#001659", borderRadius:"0" }}>Get Quote</Button>
             </Col>
             <Col lg={6}>
               <img 
-                src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src={img1} 
                 alt="Agro Products" 
                 className="img-fluid rounded shadow"
               />
