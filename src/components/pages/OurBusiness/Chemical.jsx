@@ -87,12 +87,21 @@ export const Chemical = () => {
               <h2 className="mb-4">Contact Our Chemical Division</h2>
               <p className="mb-4">Reach out to our chemical specialists for high-purity raw materials.</p>
               <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-envelope text-primary me-3 fa-lg"></i>
+                <i className="fas fa-envelope  me-3 fa-lg"  style={{ color: "#FF5E15" }}></i>
                 <span>chemicals@jcmimportexport.com</span>
               </div>
               <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-phone text-primary me-3 fa-lg"></i>
+                <i className="fas fa-phone  me-3 fa-lg"  style={{ color: "#FF5E15" }}></i>
                 <span>+1 (555) 123-CHEM</span>
+              </div>
+              <div className="d-flex align-items-center mb-3">
+                <i
+                  className="fas fa-map-marker-alt me-3 fa-lg"
+                  style={{ color: "#FF5E15" }}
+                ></i>
+                <span>
+                  123 Agriculture Street, Food District, Farmland 54321
+                </span>
               </div>
             </Col>
             <Col lg={6}>

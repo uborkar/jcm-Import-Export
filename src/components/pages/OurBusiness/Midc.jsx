@@ -87,12 +87,21 @@ export const Midc = () => {
               <h2 className="mb-4">Contact Our Industrial Division</h2>
               <p className="mb-4">Reach out to our industrial specialists for equipment and solutions.</p>
               <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-envelope text-primary me-3 fa-lg"></i>
+                <i className="fas fa-envelope  me-3 fa-lg"   style={{ color: "#FF5E15" }}></i>
                 <span>industrial@jcmimportexport.com</span>
               </div>
               <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-phone text-primary me-3 fa-lg"></i>
+                <i className="fas fa-phone  me-3 fa-lg"   style={{ color: "#FF5E15" }}></i>
                 <span>+1 (555) 123-INDU</span>
+              </div>
+               <div className="d-flex align-items-center mb-3">
+                <i
+                  className="fas fa-map-marker-alt me-3 fa-lg"
+                  style={{ color: "#FF5E15" }}
+                ></i>
+                <span>
+                  123 Agriculture Street, Food District, Farmland 54321
+                </span>
               </div>
             </Col>
             <Col lg={6}>

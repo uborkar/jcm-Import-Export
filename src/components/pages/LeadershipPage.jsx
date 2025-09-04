@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Projects from '../sections/Projects';
-import Team from '../sections/Team';
+import Leadership from '../sections/Leadership';
 
-const ProjectsPage = () => {
+const LeadershipPage = () => {
   return (
     <>
       <div className="container-fluid bg-breadcrumb">
@@ -16,10 +15,10 @@ const ProjectsPage = () => {
           </ol>    
         </div>
       </div>
-      <Projects />
-       <Team />
+      <Leadership />
+       
     </>
   );
 };
 
-export default ProjectsPage;
+export default LeadershipPage;

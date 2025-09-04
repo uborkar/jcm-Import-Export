@@ -17,7 +17,9 @@ import ExportServicesPage from "./components/pages/ExportServicesPage";
 import ImportServicesPage from "./components/pages/ImportServicesPage";
 import ValueAddedServicesPage from "./components/pages/ValueAddedServicesPage";
 import BusinessPage from "./components/pages/BusinessPage";
-import ProjectsPage from "./components/pages/ProjectsPage";
+import ProjectsPage from "./components/pages/LeadershipPage";
+import Leadership from './components/sections/Leadership';
+import Legacy from './components/pages/Legacy'; // Import the Legacy component
 import BlogPage from "./components/pages/BlogPage";
 import TradeTrendsArticle from "./components/pages/TradeTrendsArticle";
 import ImportExportTipsArticle from "./components/pages/ImportExportTipsArticle";
@@ -153,6 +155,8 @@ function App() {
             element={<ValueAddedServicesPage />}
           />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/leadership" element={<Leadership />} />
+          <Route path="/legacy" element={<Legacy />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/trade-trends" element={<TradeTrendsArticle />} />
           <Route
