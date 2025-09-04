@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import jcmlogo from "../../assets/img/logo-jcm.png";
+import { Link, useLocation,useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+   const navigate = useNavigate();
 
   const isActive = (path) => {
     return location.pathname === path ? "active" : "";
@@ -59,41 +59,51 @@ const Header = () => {
                 Services
               </Link>
 
-              <div className="nav-item dropdown">
-                <Link
-                  to="/our-business"
-                  className={`nav-link dropdown-toggle text-dark ${
-                    isActive("/our-business") ||
-                    isActive("/food-agro") ||
-                    isActive("/Textile") ||
-                    isActive("/Midc") ||
-                    isActive("/global-market") ||
-                    isActive("/chemical")
-                      ? "active"
-                      : ""
-                  }`}
-                  data-bs-toggle="dropdown"
-                >
-                  Our Business
+             <div className="nav-item dropdown">
+              <a
+                href="#"
+                className={`nav-link dropdown-toggle text-dark ${
+                  isActive("/our-business") ||
+                  isActive("/food-agro") ||
+                  isActive("/Textile") ||
+                  isActive("/Midc") ||
+                  isActive("/global-market") ||
+                  isActive("/chemical")  ||
+                  isActive("/logistics")
+                    ? "active"
+                    : ""
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (window.innerWidth > 992) {
+                    navigate("/our-business");
+                  }
+                }}
+                data-bs-toggle="dropdown"
+              >
+                Our Business
+              </a>
+              <div className="dropdown-menu m-lg-0">
+                <Link to="/food-agro" className="dropdown-item">
+                  Agro & Food Products
                 </Link>
-                <div className="dropdown-menu m-lg-0">
-                  <Link to="/food-agro" className="dropdown-item">
-                    Agro & Food Products
-                  </Link>
-                  <Link to="/Textile" className="dropdown-item">
-                    Textile & Garments
-                  </Link>
-                  <Link to="/Midc" className="dropdown-item">
-                    Industrial Goods
-                  </Link>
-                  <Link to="/global-market" className="dropdown-item">
-                    Global Market Entry Support
-                  </Link>
-                  <Link to="/chemical" className="dropdown-item">
-                    Chemicals & Raw Materials
-                  </Link>
-                </div>
+                <Link to="/Textile" className="dropdown-item">
+                  Textile & Garments
+                </Link>
+                <Link to="/Midc" className="dropdown-item">
+                  Industrial Goods
+                </Link>
+                <Link to="/global-market" className="dropdown-item">
+                  Global Market Entry Support
+                </Link>
+                <Link to="/chemical" className="dropdown-item">
+                  Chemicals & Raw Materials
+                </Link>
+                 <Link to="/logistics" className="dropdown-item">
+                  Logistics
+                </Link>
               </div>
+            </div>
               <Link
                 to="/projects"
                 className={`nav-item nav-link ${isActive("/projects")}`}

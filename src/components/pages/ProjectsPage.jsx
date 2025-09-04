@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Projects from '../sections/Projects';
+import Team from '../sections/Team';
 
 const ProjectsPage = () => {
   return (
@@ -16,6 +17,7 @@ const ProjectsPage = () => {
         </div>
       </div>
       <Projects />
+       <Team />
     </>
   );
 };

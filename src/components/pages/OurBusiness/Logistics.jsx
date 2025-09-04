@@ -12,12 +12,12 @@ export const Logistics = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6}>
-              <h1 className="display-4 fw-bold text-primary mb-4">Logistics Solutions</h1>
+              <h1 className="display-4 fw-bold  mb-4" style={{ color: "#001659" }}>Logistics Solutions</h1>
               <p className="lead mb-4">
                 End-to-end logistics solutions including shipping, warehousing, customs clearance, 
                 and supply chain management for seamless global trade.
               </p>
-              <Button variant="primary" size="lg">Get Shipping Quote</Button>
+              <Button variant="primary" size="lg" style={{ backgroundColor: "#001659", borderRadius:"0" }}>Get Shipping Quote</Button>
             </Col>
             <Col lg={6}>
               <img 

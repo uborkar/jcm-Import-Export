@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {  Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import img1 from "../../assets/img/agro-food.png";
 import img2 from "../../assets/img/fabric-1.jpg";
 import img3 from "../../assets/img/machinepart.jpg";
@@ -7,12 +8,9 @@ import img4 from "../../assets/img/logistics-1.jpg";
 import img5 from "../../assets/img/chem1.jpg";
 import img6 from "../../assets/img/logistic-partner.jpg";
 
-
-
-
-
 const BusinessSection = () => {
   const [activeCard, setActiveCard] = useState(null);
+  const navigate = useNavigate();
 
   const businessData = [
     {
@@ -20,35 +18,35 @@ const BusinessSection = () => {
       title: "Agro & Food Products",
       description: "We source and export high-quality agricultural and food products from trusted suppliers worldwide.",
       image: img1,
-      link: "/agro-food"
+      link: "/food-agro"
     },
     {
       id: 2,
       title: "Textiles & Garments",
       description: "Premium textiles and garments for fashion industry, manufactured to the highest standards.",
       image: img2,
-      link: "/textiles"
+      link: "/Textile"
     },
     {
       id: 3,
       title: "Industrial Goods",
       description: "Durable industrial goods and equipment for various sectors including manufacturing and construction.",
-      image:img3,
-      link: "/industrial"
+      image: img3,
+      link: "/Midc"
     },
     {
       id: 4,
       title: "Global Market Entry Support",
       description: "Comprehensive support services for businesses looking to enter new international markets.",
-      image:  img4,
-      link: "/market-entry"
+      image: img4,
+      link: "/global-market"
     },
     {
       id: 5,
       title: "Chemicals & Raw Materials",
       description: "High-purity chemicals and raw materials for various industries including pharmaceuticals and manufacturing.",
       image: img5,
-      link: "/chemicals"
+      link: "/chemical"
     },
     {
       id: 6,
@@ -68,10 +66,11 @@ const BusinessSection = () => {
   };
 
   const handleReadMore = (link) => {
-    // In a real application, you would use React Router here
-    console.log(`Navigating to: ${link}`);
-    // For demonstration, we'll show an alert
-    alert(`Navigating to ${link}`);
+    navigate(link);
+  };
+
+  const handleCardClick = (link) => {
+    navigate(link);
   };
 
   return (
@@ -99,6 +98,7 @@ const BusinessSection = () => {
                     className="card h-100 shadow-sm border-0 overflow-hidden position-relative"
                     onMouseEnter={() => handleCardHover(business.id)}
                     onMouseLeave={handleCardLeave}
+                    onClick={() => handleCardClick(business.link)}
                     style={{ 
                       transition: 'all 0.3s ease', 
                       borderRadius: '8px',
@@ -153,7 +153,7 @@ const BusinessSection = () => {
                       <h5 className="card-title fw-bold" style={{color: "#001659"}}>{business.title}</h5>
                       <div>
                         <p className="card-text text-muted small mt-2">
-                          Hover to learn more
+                          Click or hover to learn more
                         </p>
                       </div>
                     </div>
