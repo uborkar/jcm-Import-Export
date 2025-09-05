@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import img1 from "../../../assets/img/fabric-1.jpg";
+import img1 from "../../../assets/img/trendy-fabris-shades.jpg";
 import textileImage from "../../../assets/img/towels.jpg"; // You'll need to add this image
 
 export const Textile = () => {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import aboutImage from "../../assets/img/roadtruck_re.jpg";
 import aboutImage3 from "../../assets/img/train_re.jpg";
 import aboutImage1 from "../../assets/img/logistics-1.jpg";
-import aboutImage2 from "../../assets/img/Hero-1.jpg";
+import aboutImage2 from "../../assets/img/grains-agro.jpg";
 
 const About = () => {
   const [hover, setHover] = useState(false);
@@ -87,14 +87,14 @@ const About = () => {
                       className="fas fa-check me-1"
                       style={{ color: "#FF5E15" }}
                     ></i>
-                    100% Satisfaction
+                    Competitive pricing
                   </p>
                   <p style={{ color: "#001659" }}>
                     <i
                       className="fas fa-check me-1"
                       style={{ color: "#FF5E15" }}
                     ></i>
-                    Trained Employees
+                    End-to-end supply chain support
                   </p>
                 </div>
                 <div className="col-lg-6">
@@ -103,14 +103,14 @@ const About = () => {
                       className="fas fa-check me-1"
                       style={{ color: "#FF5E15" }}
                     ></i>
-                    Annual Pass Programs
+                    Certified & compliant operations 
                   </p>
                   <p style={{ color: "#001659", marginBottom: "0" }}>
                     <i
                       className="fas fa-check me-1"
                       style={{ color: "#FF5E15" }}
                     ></i>
-                    Flexible and cost effective
+                    Global trade expertise
                   </p>
                 </div>
               </div>

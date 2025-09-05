@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {  Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import img1 from "../../assets/img/agro-food.png";
-import img2 from "../../assets/img/fabric-1.jpg";
+import img2 from "../../assets/img/cotton-fabric.jpg";
 import img3 from "../../assets/img/machinepart.jpg";
 import img4 from "../../assets/img/logistics-1.jpg";
 import img5 from "../../assets/img/chem1.jpg";

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import service1 from '../../assets/img/Export_re.jpg';
-import service2 from '../../assets/img/Import_re.jpg';
+import service1 from '../../assets/img/daal.jpg';
+import service2 from '../../assets/img/chem-pro.jpg';
 import service3 from '../../assets/img/other_re.jpg';
 
 const Services = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import service2 from '../../assets/img/Import_re.jpg';
+import service2 from '../../assets/img/chem-pro.jpg';
 
 const ImportServicesPage = () => {
   const importServices = [
