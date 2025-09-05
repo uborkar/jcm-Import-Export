@@ -1,136 +1,159 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logisticsImage from "../../../assets/img/logistic-partner.jpg"; // You'll need to add this image
+import shippingImage from "../../../assets/img/logistics-1.jpg"; // You'll need to add this image
 
-
-// Logistics Page
 export const Logistics = () => {
   return (
     <>
-      {/* Hero Section */}
-      <section className="py-5 bg-light">
+      {/* Hero Section - Matching the provided structure */}
+      <div className="et_pb_section et_pb_with_background et_section_regular">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6}>
-              <h1 className="display-4 fw-bold  mb-4" style={{ color: "#001659" }}>Logistics Solutions</h1>
-              <p className="lead mb-4">
-                End-to-end logistics solutions including shipping, warehousing, customs clearance, 
-                and supply chain management for seamless global trade.
-              </p>
-              <Button variant="primary" size="lg" style={{ backgroundColor: "#001659", borderRadius:"0" }}>Get Shipping Quote</Button>
-            </Col>
-            <Col lg={6}>
-              <img 
-                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="Logistics" 
-                className="img-fluid rounded shadow"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-5">
-        <Container>
-          <h2 className="text-center mb-5">Our Logistics Services</h2>
-          <Row>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-ship fa-2x text-primary"></i>
+          <Row className="et_pb_row align-items-center">
+            <Col lg={8} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_left et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="inner-page-top fullpage-banner">
+                    <div className="inner-left">
+                      <h1>Logistics Solutions</h1>
+                      <p>
+                        JCM Import Export provides comprehensive end-to-end logistics solutions including 
+                        international shipping, warehousing, customs clearance, and supply chain management 
+                        for seamless global trade operations. Our expertise in logistics ensures that your 
+                        goods move efficiently across borders with minimal delays and maximum cost-effectiveness.
+                      </p>
+                    </div>
                   </div>
-                  <Card.Title>International Shipping</Card.Title>
-                  <Card.Text>
-                    Sea, air, and land freight services with global coverage and competitive rates.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-info bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-warehouse fa-2x text-info"></i>
-                  </div>
-                  <Card.Title>Warehousing</Card.Title>
-                  <Card.Text>
-                    Secure storage facilities with inventory management and distribution services.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-success bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-file-export fa-2x text-success"></i>
-                  </div>
-                  <Card.Title>Customs Clearance</Card.Title>
-                  <Card.Text>
-                    Expert handling of customs documentation and regulatory compliance.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-5 bg-light">
-        <Container>
-          <Row>
-            <Col lg={6}>
-              <h2 className="mb-4">Contact Our Logistics Team</h2>
-              <p className="mb-4">Reach out to our logistics specialists for shipping and supply chain solutions.</p>
-              <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-envelope  me-3 fa-lg"   style={{ color: "#FF5E15" }}></i>
-                <span>logistics@jcmimportexport.com</span>
+                </div>
               </div>
-              <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-phone  me-3 fa-lg"   style={{ color: "#FF5E15" }}></i>
-                <span>+1 (555) 123-LOGI</span>
-              </div>
-               <div className="d-flex align-items-center mb-3">
-                <i
-                  className="fas fa-map-marker-alt me-3 fa-lg"
-                  style={{ color: "#FF5E15" }}
-                ></i>
-                <span>
-                  123 Agriculture Street, Food District, Farmland 54321
+            </Col>
+            <Col lg={4} className="et_pb_column et-last-child">
+              <div className="et_pb_image">
+                <span className="et_pb_image_wrap">
+                  <img
+                    src={logisticsImage}
+                    alt="Logistics Solutions"
+                    className="img-fluid wp-image-7714"
+                    style={{ width: "534px", height: "450px", objectFit: "cover" }}
+                  />
                 </span>
               </div>
             </Col>
-            <Col lg={6}>
-              <Card className="border-0 shadow">
-                <Card.Body className="p-4">
-                  <h5 className="card-title mb-4">Request a Quote</h5>
-                  <form>
-                    <div className="mb-3">
-                      <input type="text" className="form-control" placeholder="Your Name" />
+          </Row>
+        </Container>
+      </div>
+
+      {/* Full Width Section - Matching the provided structure */}
+      <div id="full-width" className="et_pb_section et_pb_with_background et_section_regular">
+        <Container>
+          <Row className="et_pb_row">
+            <Col lg={6} className="et_pb_column">
+              <div className="et_pb_image">
+                <span className="et_pb_image_wrap">
+                  <img
+                    src={shippingImage}
+                    alt="Shipping Services"
+                    className="img-fluid wp-image-7715"
+                    style={{ width: "534px", height: "408px", objectFit: "cover" }}
+                  />
+                </span>
+              </div>
+            </Col>
+            <Col lg={6} className="et_pb_column et-last-child">
+              <div className="et_pb_text pad-sec et_pb_text_align_left et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="inner-page-top fullpage-banner">
+                    <div className="inner-left">
+                      <h2>Comprehensive Logistics Services</h2>
+                      <p>
+                        Our logistics services cover the entire supply chain from origin to destination. 
+                        We offer sea freight, air freight, and land transportation with global coverage 
+                        and competitive rates. Our warehousing solutions include secure storage facilities 
+                        with advanced inventory management systems. We also provide expert customs clearance 
+                        services, handling all documentation and regulatory compliance to ensure smooth 
+                        passage of goods through customs checkpoints worldwide.
+                      </p>
                     </div>
-                    <div className="mb-3">
-                      <input type="email" className="form-control" placeholder="Your Email" />
-                    </div>
-                    <div className="mb-3">
-                      <select className="form-select">
-                        <option>Select Service</option>
-                        <option>International Shipping</option>
-                        <option>Warehousing</option>
-                        <option>Customs Clearance</option>
-                        <option>Full Logistics Solution</option>
-                      </select>
-                    </div>
-                    <Button variant="primary" className="w-100">Get Quote</Button>
-                  </form>
-                </Card.Body>
-              </Card>
+                  </div>
+                </div>
+              </div>
+              <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
+                <Button 
+                  className="et_pb_button pad-sec2 et_pb_bg_layout_light"
+                  style={{ 
+                    backgroundColor: "#001659", 
+                    border: "none",
+                    borderRadius: "0",
+                    padding: "0.5rem 1.5rem"
+                  }}
+                >
+                  Get Shipping Quote
+                </Button>
+              </div>
             </Col>
           </Row>
         </Container>
-      </section>
+      </div>
+
+      {/* Additional Content Section */}
+      <div className="et_pb_section et_pb_with_background et_section_regular">
+        <Container>
+          <Row className="et_pb_row">
+            <Col lg={12}>
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <h2>Our Logistics Services</h2>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="et_pb_row">
+            <Col md={4} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-ship fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>International Shipping</h4>
+                  <p>
+                    Sea, air, and land freight services with global coverage, competitive rates, 
+                    and reliable scheduling for all your international shipping needs.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-warehouse fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Warehousing</h4>
+                  <p>
+                    Secure storage facilities with inventory management, distribution services, 
+                    and temperature-controlled options for sensitive goods.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4} className="et_pb_column et-last-child">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-file-export fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Customs Clearance</h4>
+                  <p>
+                    Expert handling of customs documentation, regulatory compliance, and 
+                    tariff classification to ensure smooth customs clearance processes.
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };

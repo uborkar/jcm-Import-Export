@@ -1,168 +1,161 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import img1 from "../../../assets/img/food-agro.jpg";
+import consumerImage from "../../../assets/img/food-materials.jpg"; // You'll need to add this image
 
 // FoodAgro Page
 export const FoodAgro = () => {
   return (
     <>
-      {/* Hero Section */}
-      <section className="py-5 bg-light">
+      {/* Hero Section - Matching the provided structure */}
+      <div className="et_pb_section et_pb_with_background et_section_regular">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6}>
-              <h1
-                className="display-4 fw-bold  mb-4"
-                style={{ color: "#001659" }}
-              >
-                Agro & Food Products
-              </h1>
-              <p className="lead mb-4">
-                We source and export high-quality agricultural and food products
-                from trusted suppliers worldwide, ensuring the finest quality
-                reaches your table.
-              </p>
-              <Button
-                variant="primary"
-                size="lg"
-                style={{ backgroundColor: "#001659", borderRadius: "0" }}
-              >
-                Get Quote
-              </Button>
-            </Col>
-            <Col lg={6}>
-              <img
-                src={img1}
-                alt="Agro Products"
-                className="img-fluid rounded shadow"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-5">
-        <Container>
-          <h2 className="text-center mb-5">Our Agro & Food Services</h2>
-          <Row>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-seedling fa-2x text-primary"></i>
+          <Row className="et_pb_row align-items-center">
+            <Col lg={8} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_left et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="inner-page-top fullpage-banner">
+                    <div className="inner-left">
+                      <h1>Pulses & Grains</h1>
+                      <p>
+                        JCM Import Export is a leading importer and supplier of high-quality pulses and grains, 
+                        offering a variety of products including Toor (Arhar), Moong, Udad, Masoor, Chana, 
+                        and various peas. Our products are sourced from trusted suppliers worldwide and 
+                        processed with modern machinery to ensure the highest quality while maintaining 
+                        food safety standards.
+                      </p>
+                    </div>
                   </div>
-                  <Card.Title>Fresh Produce</Card.Title>
-                  <Card.Text>
-                    High-quality fruits, vegetables, and grains sourced directly
-                    from certified farms.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-success bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-wine-bottle fa-2x text-success"></i>
-                  </div>
-                  <Card.Title>Processed Foods</Card.Title>
-                  <Card.Text>
-                    Premium processed and packaged food products meeting
-                    international standards.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-warning bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-truck-loading fa-2x text-warning"></i>
-                  </div>
-                  <Card.Title>Logistics</Card.Title>
-                  <Card.Text>
-                    Temperature-controlled supply chain to maintain product
-                    freshness and quality.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-5 bg-light">
-        <Container>
-          <Row>
-            <Col lg={6}>
-              <h2 className="mb-4">Contact Our Agro Division</h2>
-              <p className="mb-4">
-                Reach out to our specialists for premium agro and food products.
-              </p>
-              <div className="d-flex align-items-center mb-3">
-                <i
-                  className="fas fa-envelope  me-3 fa-lg"
-                  style={{ color: "#FF5E15" }}
-                ></i>
-                <span>agro@jcmimportexport.com</span>
+                </div>
               </div>
-              <div className="d-flex align-items-center mb-3">
-                <i
-                  className="fas fa-phone  me-3 fa-lg"
-                  style={{ color: "#FF5E15" }}
-                ></i>
-                <span>+1 (555) 123-AGRO</span>
-              </div>
-              <div className="d-flex align-items-center mb-3">
-                <i
-                  className="fas fa-map-marker-alt me-3 fa-lg"
-                  style={{ color: "#FF5E15" }}
-                ></i>
-                <span>
-                  123 Agriculture Street, Food District, Farmland 54321
+            </Col>
+            <Col lg={4} className="et_pb_column et-last-child">
+              <div className="et_pb_image">
+                <span className="et_pb_image_wrap">
+                  <img
+                    src={img1}
+                    alt="Pulses and Grains"
+                    className="img-fluid wp-image-7714"
+                    style={{ width: "534px", height: "450px", objectFit: "cover" }}
+                  />
                 </span>
               </div>
             </Col>
-            <Col lg={6}>
-              <Card className="border-0 shadow">
-                <Card.Body className="p-4">
-                  <h5 className="card-title mb-4">Send us a message</h5>
-                  <form>
-                    <div className="mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Your Name"
-                      />
+          </Row>
+        </Container>
+      </div>
+
+      {/* Full Width Section - Matching the provided structure */}
+      <div id="full-width" className="et_pb_section et_pb_with_background et_section_regular">
+        <Container>
+          <Row className="et_pb_row">
+            <Col lg={6} className="et_pb_column">
+              <div className="et_pb_image">
+                <span className="et_pb_image_wrap">
+                  <img
+                    src={consumerImage}
+                    alt="Bulk Pack Products"
+                    className="img-fluid wp-image-7715"
+                    style={{ width: "534px", height: "408px", objectFit: "cover" }}
+                  />
+                </span>
+              </div>
+            </Col>
+            <Col lg={6} className="et_pb_column et-last-child">
+              <div className="et_pb_text pad-sec et_pb_text_align_left et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="inner-page-top fullpage-banner">
+                    <div className="inner-left">
+                      <h2>Bulk Pack</h2>
+                      <p>
+                        Our bulk products are available in various packaging options to meet different 
+                        market needs. We supply to distributors, wholesalers, and large-scale food 
+                        processing companies across India and international markets. Our bulk packaging 
+                        ensures product freshness and quality during transportation and storage.
+                      </p>
                     </div>
-                    <div className="mb-3">
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Your Email"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <textarea
-                        className="form-control"
-                        rows="4"
-                        placeholder="Your Message"
-                      ></textarea>
-                    </div>
-                    <Button variant="primary" className="w-100">
-                      Send Message
-                    </Button>
-                  </form>
-                </Card.Body>
-              </Card>
+                  </div>
+                </div>
+              </div>
+              <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
+                <Button 
+                  className="et_pb_button pad-sec2 et_pb_bg_layout_light"
+                  style={{ 
+                    backgroundColor: "#001659", 
+                    border: "none",
+                    borderRadius: "0",
+                    padding: "0.5rem 1.5rem"
+                  }}
+                >
+                  Know More
+                </Button>
+              </div>
             </Col>
           </Row>
         </Container>
-      </section>
+      </div>
+
+      {/* Additional Content Section */}
+      <div className="et_pb_section et_pb_with_background et_section_regular">
+        <Container>
+          <Row className="et_pb_row">
+            <Col lg={12}>
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <h2>Our Agro & Food Products Range</h2>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="et_pb_row">
+            <Col md={4} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-seedling fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Fresh Pulses</h4>
+                  <p>
+                    High-quality pulses including Toor, Moong, Udad, Masoor, and Chana sourced directly 
+                    from certified farms and suppliers.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-wheat-alt fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Grains & Cereals</h4>
+                  <p>
+                    Premium quality grains and cereals including rice, wheat, and specialty grains for 
+                    diverse culinary applications.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4} className="et_pb_column et-last-child">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-truck-loading fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Supply Chain</h4>
+                  <p>
+                    Efficient logistics and temperature-controlled supply chain to maintain product 
+                    freshness and quality from farm to table.
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };
+
 export default FoodAgro;

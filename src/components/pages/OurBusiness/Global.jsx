@@ -1,129 +1,159 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import globalMarketImage from "../../../assets/img/Hero-2.jpg"; // You'll need to add this image
+import marketResearchImage from "../../../assets/img/Hero-3.jpg"; // You'll need to add this image
 
-// GlobalMarket Page
 export const GlobalMarket = () => {
   return (
     <>
-      {/* Hero Section */}
-      <section className="py-5 bg-light">
+      {/* Hero Section - Matching the provided structure */}
+      <div className="et_pb_section et_pb_with_background et_section_regular">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6}>
-              <h1 className="display-4 fw-bold  mb-4" style={{ color: "#001659" }}>Global Market Entry Support</h1>
-              <p className="lead mb-4">
-                Comprehensive support services for businesses looking to enter new international markets, 
-                with expertise in regulations, logistics, and market strategy.
-              </p>
-              <Button variant="primary" size="lg" style={{ backgroundColor: "#001659", borderRadius:"0" }}>Start Expanding</Button>
-            </Col>
-            <Col lg={6}>
-              <img 
-                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="Global Market" 
-                className="img-fluid rounded shadow"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-5">
-        <Container>
-          <h2 className="text-center mb-5">Our Market Entry Services</h2>
-          <Row>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-chart-line fa-2x text-primary"></i>
+          <Row className="et_pb_row align-items-center">
+            <Col lg={8} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_left et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="inner-page-top fullpage-banner">
+                    <div className="inner-left">
+                      <h1>Global Market Entry Support</h1>
+                      <p>
+                        JCM Import Export provides comprehensive support services for businesses looking 
+                        to enter new international markets. With our extensive experience in global trade, 
+                        we offer expertise in market research, regulatory compliance, logistics, and market 
+                        strategy development to help your business expand successfully into new territories.
+                      </p>
+                    </div>
                   </div>
-                  <Card.Title>Market Research</Card.Title>
-                  <Card.Text>
-                    Comprehensive analysis of target markets, competition, and consumer behavior.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-info bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-file-contract fa-2x text-info"></i>
-                  </div>
-                  <Card.Title>Regulatory Compliance</Card.Title>
-                  <Card.Text>
-                    Guidance on international trade regulations, certifications, and documentation.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm">
-                <Card.Body className="text-center">
-                  <div className="bg-success bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-handshake fa-2x text-success"></i>
-                  </div>
-                  <Card.Title>Partnership Development</Card.Title>
-                  <Card.Text>
-                    Connecting businesses with reliable partners and distributors in target markets.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-5 bg-light">
-        <Container>
-          <Row>
-            <Col lg={6}>
-              <h2 className="mb-4">Contact Our Market Entry Team</h2>
-              <p className="mb-4">Reach out to our global expansion specialists for market entry support.</p>
-              <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-envelope  me-3 fa-lg"  style={{ color: "#FF5E15" }}></i>
-                <span>global@jcmimportexport.com</span>
+                </div>
               </div>
-              <div className="d-flex align-items-center mb-3">
-                <i className="fas fa-phone  me-3 fa-lg"   style={{ color: "#FF5E15" }}></i>
-                <span>+1 (555) 123-GLOBAL</span>
-              </div>
-               <div className="d-flex align-items-center mb-3">
-                <i
-                  className="fas fa-map-marker-alt me-3 fa-lg"
-                  style={{ color: "#FF5E15" }}
-                ></i>
-                <span>
-                  123 Agriculture Street, Food District, Farmland 54321
+            </Col>
+            <Col lg={4} className="et_pb_column et-last-child">
+              <div className="et_pb_image">
+                <span className="et_pb_image_wrap">
+                  <img
+                    src={globalMarketImage}
+                    alt="Global Market Entry Support"
+                    className="img-fluid wp-image-7714"
+                    style={{ width: "534px", height: "450px", objectFit: "cover" }}
+                  />
                 </span>
               </div>
             </Col>
-            <Col lg={6}>
-              <Card className="border-0 shadow">
-                <Card.Body className="p-4">
-                  <h5 className="card-title mb-4">Send us a message</h5>
-                  <form>
-                    <div className="mb-3">
-                      <input type="text" className="form-control" placeholder="Your Name" />
+          </Row>
+        </Container>
+      </div>
+
+      {/* Full Width Section - Matching the provided structure */}
+      <div id="full-width" className="et_pb_section et_pb_with_background et_section_regular">
+        <Container>
+          <Row className="et_pb_row">
+            <Col lg={6} className="et_pb_column">
+              <div className="et_pb_image">
+                <span className="et_pb_image_wrap">
+                  <img
+                    src={marketResearchImage}
+                    alt="Market Research Services"
+                    className="img-fluid wp-image-7715"
+                    style={{ width: "534px", height: "408px", objectFit: "cover" }}
+                  />
+                </span>
+              </div>
+            </Col>
+            <Col lg={6} className="et_pb_column et-last-child">
+              <div className="et_pb_text pad-sec et_pb_text_align_left et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="inner-page-top fullpage-banner">
+                    <div className="inner-left">
+                      <h2>Comprehensive Market Analysis</h2>
+                      <p>
+                        Our market entry services include detailed analysis of target markets, competition 
+                        assessment, consumer behavior studies, and regulatory landscape mapping. We provide 
+                        customized strategies for different regions including Asia, Europe, Middle East, 
+                        Africa, and the Americas. Our team helps you navigate cultural differences, legal 
+                        requirements, and business practices to ensure successful market penetration and 
+                        sustainable growth in new territories.
+                      </p>
                     </div>
-                    <div className="mb-3">
-                      <input type="email" className="form-control" placeholder="Your Email" />
-                    </div>
-                    <div className="mb-3">
-                      <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                    <Button variant="primary" className="w-100">Send Message</Button>
-                  </form>
-                </Card.Body>
-              </Card>
+                  </div>
+                </div>
+              </div>
+              <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
+                <Button 
+                  className="et_pb_button pad-sec2 et_pb_bg_layout_light"
+                  style={{ 
+                    backgroundColor: "#001659", 
+                    border: "none",
+                    borderRadius: "0",
+                    padding: "0.5rem 1.5rem"
+                  }}
+                >
+                  Start Expanding
+                </Button>
+              </div>
             </Col>
           </Row>
         </Container>
-      </section>
+      </div>
+
+      {/* Additional Content Section */}
+      <div className="et_pb_section et_pb_with_background et_section_regular">
+        <Container>
+          <Row className="et_pb_row">
+            <Col lg={12}>
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <h2>Our Market Entry Services</h2>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="et_pb_row">
+            <Col md={4} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-chart-line fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Market Research</h4>
+                  <p>
+                    Comprehensive analysis of target markets, competition landscape, consumer behavior, 
+                        and growth opportunities to inform your expansion strategy.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4} className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-file-contract fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Regulatory Compliance</h4>
+                  <p>
+                    Guidance on international trade regulations, certifications, documentation requirements, 
+                        and compliance with local laws in target markets.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4} className="et_pb_column et-last-child">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i className="fas fa-handshake fa-2x" style={{ color: "#001659" }}></i>
+                  </div>
+                  <h4>Partnership Development</h4>
+                  <p>
+                    Connecting businesses with reliable partners, distributors, agents, and local 
+                        representatives in target markets to facilitate successful market entry.
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };
