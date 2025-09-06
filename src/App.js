@@ -18,8 +18,8 @@ import ImportServicesPage from "./components/pages/ImportServicesPage";
 import ValueAddedServicesPage from "./components/pages/ValueAddedServicesPage";
 import BusinessPage from "./components/pages/BusinessPage";
 import ProjectsPage from "./components/pages/LeadershipPage";
-import Leadership from './components/sections/Leadership';
-import Legacy from './components/pages/Legacy'; // Import the Legacy component
+import Leadership from "./components/sections/Leadership";
+import Legacy from "./components/pages/Legacy"; // Import the Legacy component
 import BlogPage from "./components/pages/BlogPage";
 import TradeTrendsArticle from "./components/pages/TradeTrendsArticle";
 import ImportExportTipsArticle from "./components/pages/ImportExportTipsArticle";
@@ -32,6 +32,8 @@ import NotFound from "./components/pages/NotFound";
 
 // Import OurBusiness pages - FIXED IMPORTS
 import AgroFood from "./components/pages/OurBusiness/Agrofood";
+import PulsesProducts from "./components/pages/OurBusiness/products/PulsesProducts";
+import Textiles from "./components/pages/OurBusiness/products/Textile";
 import Textile from "./components/pages/OurBusiness/Textile";
 import Midc from "./components/pages/OurBusiness/Midc";
 import Global from "./components/pages/OurBusiness/Global";
@@ -145,6 +147,8 @@ function App() {
           <Route path="/import-services" element={<ImportServicesPage />} />
           {/* REMOVED DUPLICATE ROUTE: <Route path="/our-business" element={<OurBusiness />} /> */}
           <Route path="/food-agro" element={<AgroFood />} />
+          <Route path="/PulsesProducts" element={<PulsesProducts />} />
+          <Route path="/textiles" element={<Textiles />} />
           <Route path="/Textile" element={<Textile />} />
           <Route path="/Midc" element={<Midc />} />
           <Route path="/global-market" element={<Global />} />
@@ -172,6 +176,32 @@ function App() {
         </Routes>
 
         <Footer />
+        {/* Back to Top Button */}
+        {/* Back to Top Button */}
+        <a
+          href="#"
+          className="back-to-top"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 99,
+            width: "50px",
+            height: "50px",
+            borderRadius: "0", // Changed from '50%' to '0' for square shape
+            backgroundColor: "#001659",
+            color: "white",
+            border: "none",
+            display: "none",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "20px",
+            textDecoration: "none",
+            boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+          }}
+        >
+          ↑
+        </a>
       </div>
     </Router>
   );

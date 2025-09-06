@@ -79,7 +79,7 @@ export const Chemical = () => {
                 </div>
               </div>
               <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
-                <Button 
+                {/* <Button 
                   className="et_pb_button pad-sec2 et_pb_bg_layout_light"
                   style={{ 
                     backgroundColor: "#001659", 
@@ -89,7 +89,7 @@ export const Chemical = () => {
                   }}
                 >
                   Request Catalog
-                </Button>
+                </Button> */}
               </div>
             </Col>
           </Row>

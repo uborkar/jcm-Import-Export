@@ -118,7 +118,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2">
-              <button
+              {/* <button
                 className="btn btn-primary py-2 px-3"
                 data-bs-toggle="modal"
                 data-bs-target="#searchModal"
@@ -129,7 +129,7 @@ const Header = () => {
                 }}
               >
                 <i className="fas fa-search"></i>
-              </button>
+              </button> */}
               <Link
                 to="/contact"
                 className="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0"

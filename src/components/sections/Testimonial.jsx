@@ -49,7 +49,7 @@ const Testimonial = () => {
     },
     {
       img: testimonial3,
-      name: "James Thompson",
+      name: "Sara",
       profession: "Operations Director",
       content: "We've been partnering with JCM for over 3 years. Their reliability and attention to detail have made them an indispensable part of our supply chain.",
       rating: 4

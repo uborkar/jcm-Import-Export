@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import aboutImage from "../../assets/img/roadtruck_re.jpg";
-import aboutImage3 from "../../assets/img/train_re.jpg";
-import aboutImage1 from "../../assets/img/logistics-1.jpg";
+import aboutImage from "../../assets/img/masala.jpg";
+import aboutImage3 from "../../assets/img/soy.jpg";
+import aboutImage1 from "../../assets/img/Hero-2.jpg";
 import aboutImage2 from "../../assets/img/grains-agro.jpg";
 
 const About = () => {
@@ -39,13 +39,22 @@ const About = () => {
                 className="text-uppercase  fs-5 mb-0"
                 style={{ color: "#FF5E15" }}
               >
-               JCM Import-Export Hub
+                JCM Import-Export Hub
               </p>
-              <h2 className="display-4 text-capitalize mb-3"  style={{color: "#001659"}}>
+              <h2
+                className="display-4 text-capitalize mb-3"
+                style={{ color: "#001659" }}
+              >
                 Making global trade simple with JCM expertise
               </h2>
               <p className="mb-4 fs-5">
-               JCM Import Export Hub, a proud division of JCM Techedge Pvt. Ltd., leads the way in global trade solutions. With a strong focus on quality, efficiency, and innovation, we connect businesses across continents. Leveraging technology and expertise, we ensure reliability, transparency, and customer satisfaction—empowering partners to achieve sustainable growth worldwide.
+                JCM Import Export Hub, a proud division of JCM Techedge Pvt.
+                Ltd., leads the way in global trade solutions. With a strong
+                focus on quality, efficiency, and innovation, we connect
+                businesses across continents. Leveraging technology and
+                expertise, we ensure reliability, transparency, and customer
+                satisfaction—empowering partners to achieve sustainable growth
+                worldwide.
               </p>
               <div className="pb-4 mb-4 border-bottom">
                 <div className="row g-4">
@@ -62,20 +71,34 @@ const About = () => {
                     <div className="d-flex mb-4">
                       <div className="text-secondary">
                         <i
-                          className="fas fa-user-shield fa-3x"
+                          className="bi bi-eye-fill fa-2x"
                           style={{ color: "#FF5E15" }}
                         ></i>
                       </div>
-                      <h4 className="ms-3"  style={{color: "#001659"}}>Building quality standards</h4>
+                      <div className="ms-3">
+                        <h4 style={{ color: "#001659" }}>Our Vision</h4>
+                        <p className="mb-0">
+                          To be the world's most trusted import-export partner,
+                          connecting global markets with quality products and
+                          exceptional service.
+                        </p>
+                      </div>
                     </div>
                     <div className="d-flex">
                       <div className="text-secondary">
                         <i
-                          className="fas fa-users-cog fa-3x"
+                          className="bi bi-bullseye fa-2x"
                           style={{ color: "#FF5E15" }}
                         ></i>
                       </div>
-                      <h4 className="ms-3"  style={{color: "#001659"}}>Certified engineer's team</h4>
+                      <div className="ms-3">
+                        <h4 style={{ color: "#001659" }}>Our Mission</h4>
+                        <p className="mb-0">
+                          To deliver superior value through reliable supply
+                          chain solutions, innovative trade practices, and
+                          unwavering commitment to customer satisfaction.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -103,7 +126,7 @@ const About = () => {
                       className="fas fa-check me-1"
                       style={{ color: "#FF5E15" }}
                     ></i>
-                    Certified & compliant operations 
+                    Certified & compliant operations
                   </p>
                   <p style={{ color: "#001659", marginBottom: "0" }}>
                     <i
