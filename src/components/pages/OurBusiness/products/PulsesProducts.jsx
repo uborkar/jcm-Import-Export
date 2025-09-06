@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import pulsesBanner from "../../../../assets/img/daal.jpg";
-import toorDalImage from "../../../../assets/img/Toor.jpg";
+import toorDalImage from "../../../../assets/img/Toor-re.jpg";
 import moongDalImage from "../../../../assets/img/moong.jpg";
 import chanaDalImage from "../../../../assets/img/chana.jpg";
 import udadDalImage from "../../../../assets/img/urad.jpg";
-import masoorDalImage from "../../../../assets/img/masoor.jpg";
+import masoorDalImage from "../../../../assets/img/masoor-re.jpg";
 import packagingImage from "../../../../assets/img/pack.jpg";
 
 export const PulsesProducts = () => {
