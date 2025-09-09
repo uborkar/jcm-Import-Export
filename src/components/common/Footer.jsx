@@ -9,13 +9,13 @@ const Footer = () => {
   // Styles
   const signupBtnStyle = {
     backgroundColor: signupHover ? "#001659" : "#FF5E15",
-    borderRadius: "0",
+    borderRadius: "5px",
     color: "white",
     transition: "all 0.3s ease-in-out",
   };
 
   const emailInputStyle = {
-    borderRadius: "0",
+    borderRadius: "5px",
   };
 
   // Social buttons: orange → white on hover

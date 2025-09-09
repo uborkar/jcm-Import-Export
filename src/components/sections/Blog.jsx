@@ -131,7 +131,7 @@ const Blog = () => {
                     style={{
                       backgroundColor: hoverBtn[index] ? "#001659" : "#FF5E15",
                       color: hoverBtn[index] ? "#FF5E15" : "#fff",
-                      borderRadius: "0",
+                      borderRadius: "5px",
                       border: "none",
                       transition: "0.3s",
                     }}

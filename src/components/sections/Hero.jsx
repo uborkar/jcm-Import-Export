@@ -24,11 +24,11 @@ const Hero = () => {
   return (
     <div className="container-fluid overflow-hidden px-0">
       <div id="carouselId" className="carousel slide" data-bs-ride="carousel">
-        <ol className="carousel-indicators fadeInUp animate__animated" style={{animationDelay: "2s"}}>
+        {/* <ol className="carousel-indicators fadeInUp animate__animated" style={{animationDelay: "2s"}}>
           <li data-bs-target="#carouselId" data-bs-slide-to="0" className="active" aria-current="true"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-        </ol>
+        </ol> */}
 
         <div className="carousel-inner" role="listbox">
           {/* First slide */}
@@ -41,7 +41,7 @@ const Hero = () => {
               <div className="d-flex justify-content-center">
                 <Link to="/contact" 
                   className="btn d-flex py-3 px-5 me-2 flex-shrink-0"
-                  style={{backgroundColor: "#001248", color: "white", border: "none", borderRadius: "0", textDecoration: "none"}}
+                  style={{backgroundColor: "#001248", color: "white", border: "none", borderRadius: "5px", textDecoration: "none"}}
                   onMouseEnter={(e) => handleBtnEnter(e, "#FF5E15")}
                   onMouseLeave={(e) => handleBtnLeave(e, "#001248")}
                 >
@@ -61,7 +61,7 @@ const Hero = () => {
               <div className="d-flex justify-content-center">
                 <Link to="/our-business"
                   className="btn d-inline-block py-3 px-5 ms-2 flex-shrink-0"
-                  style={{backgroundColor: "#ff5e15", color: "white", border: "none", borderRadius: "0", textDecoration: "none"}}
+                  style={{backgroundColor: "#ff5e15", color: "white", border: "none", borderRadius: "5px", textDecoration: "none"}}
                   onMouseEnter={(e) => handleBtnEnter(e, "#001248")}
                   onMouseLeave={(e) => handleBtnLeave(e, "#FF5E15")}
                 >
@@ -81,7 +81,7 @@ const Hero = () => {
               <div className="d-flex justify-content-center">
                 <Link to="/contact"
                   className="btn d-inline-block py-3 px-5 ms-2 flex-shrink-0"
-                  style={{backgroundColor: "#ff5e15", color: "white", border: "none", borderRadius: "0", textDecoration: "none"}}
+                  style={{backgroundColor: "#ff5e15", color: "white", border: "none", borderRadius: "5px", textDecoration: "none"}}
                   onMouseEnter={(e) => handleBtnEnter(e, "#001248")}
                   onMouseLeave={(e) => handleBtnLeave(e, "#FF5E15")}
                 >
@@ -101,7 +101,7 @@ const Hero = () => {
               height: "40px",
               backgroundColor: "#FF5E15",
               backgroundImage: "none",
-              borderRadius: "0",
+              borderRadius: "5px",
               transition: "0.3s"
             }}
             onMouseEnter={handleNavEnter}
@@ -118,7 +118,7 @@ const Hero = () => {
               height: "40px",
               backgroundColor: "#FF5E15",
               backgroundImage: "none",
-              borderRadius: "0",
+              borderRadius: "5px",
               transition: "0.3s"
             }}
             onMouseEnter={handleNavEnter}

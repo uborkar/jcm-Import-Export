@@ -13,7 +13,7 @@ const Counter = () => {
     fontWeight: "600",
     transition: "all 0.3s ease-in-out",
     textDecoration: "none",
-    borderRadius: "0px", // no border radius
+    borderRadius: "5px", // no border radius
     display: "inline-block",
   };
 

@@ -129,7 +129,7 @@ const Services = () => {
                         <Link
                           to={s.link}
                           className="btn py-2 px-4"
-                          style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "0", textDecoration: "none" }}
+                          style={{ backgroundColor: "#FF5E15", color: "white",  borderRadius: "5px", textDecoration: "none" }}
                           onMouseEnter={(e) => hoverSwap(e, "#001659")}
                           onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
                         >
@@ -158,17 +158,17 @@ const Services = () => {
           </div>
 
           {/* More Services Button */}
-          <div className="col-12 text-center mt-4">
+          {/* <div className="col-12 text-center mt-4">
             <Link
               to="/services"
               className="btn py-3 px-5"
-              style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "0", textDecoration: "none" }}
+              style={{ backgroundColor: "#FF5E15", color: "white",  borderRadius: "5px", textDecoration: "none" }}
               onMouseEnter={(e) => hoverSwap(e, "#001659")}
               onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
             >
               More Services
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

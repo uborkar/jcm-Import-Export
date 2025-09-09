@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import service1 from '../../assets/img/daal.jpg';
 import service2 from '../../assets/img/chem-pro.jpg';
 import service3 from '../../assets/img/other_re.jpg';
 
 const Services = () => {
   const [hovered, setHovered] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredServices, setFilteredServices] = useState([]);
+  const location = useLocation();
 
   const hoverSwap = (e, hover) => {
     e.target.style.backgroundColor = hover;
@@ -14,7 +17,7 @@ const Services = () => {
     e.target.style.backgroundColor = initial;
   };
 
-  const services = [
+  const allServices = [
     { 
       id: 1, 
       img: service1, 
@@ -59,9 +62,48 @@ const Services = () => {
     }
   ];
 
+  useEffect(() => {
+    // Get search term from URL
+    const params = new URLSearchParams(location.search);
+    const searchParam = params.get('search');
+    
+    if (searchParam) {
+      setSearchTerm(searchParam);
+      // Filter services based on search term
+      const filtered = allServices.filter(service => 
+        service.title.toLowerCase().includes(searchParam.toLowerCase()) ||
+        service.description.toLowerCase().includes(searchParam.toLowerCase()) ||
+        service.features.some(feature => 
+          feature.toLowerCase().includes(searchParam.toLowerCase())
+        )
+      );
+      setFilteredServices(filtered);
+    } else {
+      setFilteredServices(allServices);
+    }
+  }, [location.search]);
+
   return (
     <div className="container-fluid service bg-light py-5">
       <div className="container pb-5">
+        {/* Search Results Header */}
+        {searchTerm && (
+          <div className="alert alert-info mb-4">
+            <div className="d-flex justify-content-between align-items-center">
+              <div>
+                Showing {filteredServices.length} result{filteredServices.length !== 1 ? 's' : ''} for: 
+                <strong> "{searchTerm}"</strong>
+              </div>
+              <Link 
+                to="/services" 
+                className="btn btn-sm btn-outline-secondary"
+              >
+                Clear Search
+              </Link>
+            </div>
+          </div>
+        )}
+
         <div className="text-center mx-auto pb-5" style={{ maxWidth: "800px" }}>
           <p className="text-uppercase fs-5 mb-0" style={{ color: "#FF5E15" }}>Our Services</p>
           <h2 className="display-4 text-capitalize mb-3" style={{ color: "#001659" }}>
@@ -69,89 +111,116 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="row g-4">
-          {services.map((s, i) => (
-            <div key={s.id} className="col-lg-4">
-              <div
-                className="service-item position-relative"
-                style={{ border: "1px solid #eee", overflow: "hidden" }}
-                onMouseEnter={() => setHovered(s.id)}
-                onMouseLeave={() => setHovered(null)}
-              >
-                {/* Image wrapper */}
-                <div className="service-img position-relative" style={{ overflow: "hidden" }}>
-                  <img
-                    src={s.img}
-                    alt={s.title}
-                    className="img-fluid w-100"
-                    style={{ transition: "transform 0.4s ease", transform: hovered === s.id ? "scale(1.1)" : "scale(1)" }}
-                  />
-
-                  {/* Overlay appears on hover */}
-                  {hovered === s.id && (
-                    <div
-                      className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center"
-                      style={{ backgroundColor: "rgba(0,0,0,0.6)", transition: "all 0.3s ease" }}
-                    >
-                      <div
-                        className="d-flex justify-content-center align-items-center"
-                        style={{ width: "120px", height: "120px", backgroundColor: "#FF5E15" }}
-                      >
-                        <i className={`${s.icon} fa-4x`} style={{ color: "#001659" }}></i>
-                      </div>
-                      <Link to={s.link} className="d-block fs-4 my-4" style={{ color: "white", textDecoration: "none" }}>
-                        {s.title}
-                      </Link>
-                      <div className="text-white mb-4 px-3">
-                        <ul className="text-start" style={{ fontSize: "0.9rem" }}>
-                          {s.features.map((feature, index) => (
-                            <li key={index} className="mb-2">{feature}</li>
-                          ))}
-                        </ul>
-                      </div>
-                      <Link
-                        to={s.link}
-                        className="btn py-2 px-4"
-                        style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "0", textDecoration: "none" }}
-                        onMouseEnter={(e) => hoverSwap(e, "#001659")}
-                        onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
-                      >
-                        Read More
-                      </Link>
-                    </div>
-                  )}
-                </div>
-
-                {/* Always visible bottom bar */}
+        {filteredServices.length > 0 ? (
+          <div className="row g-4">
+            {filteredServices.map((s, i) => (
+              <div key={s.id} className="col-lg-4">
                 <div
-                  className="service-tytle d-flex justify-content-between align-items-center p-3"
-                  style={{ backgroundColor: "white", borderTop: "1px solid #eee" }}
+                  className="service-item position-relative"
+                  style={{ border: "1px solid #eee", overflow: "hidden" }}
+                  onMouseEnter={() => setHovered(s.id)}
+                  onMouseLeave={() => setHovered(null)}
                 >
-                  <h4 style={{ color: "#001659" }}>{s.title}</h4>
+                  {/* Image wrapper */}
+                  <div className="service-img position-relative" style={{ overflow: "hidden" }}>
+                    <img
+                      src={s.img}
+                      alt={s.title}
+                      className="img-fluid w-100"
+                      style={{ transition: "transform 0.4s ease", transform: hovered === s.id ? "scale(1.1)" : "scale(1)" }}
+                    />
+
+                    {/* Overlay appears on hover */}
+                    {hovered === s.id && (
+                      <div
+                        className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                        style={{ backgroundColor: "rgba(0,0,0,0.6)", transition: "all 0.3s ease" }}
+                      >
+                        <div
+                          className="d-flex justify-content-center align-items-center"
+                          style={{ width: "120px", height: "120px", backgroundColor: "#FF5E15" }}
+                        >
+                          <i className={`${s.icon} fa-4x`} style={{ color: "#001659" }}></i>
+                        </div>
+                        <Link to={s.link} className="d-block fs-4 my-4" style={{ color: "white", textDecoration: "none" }}>
+                          {s.title}
+                        </Link>
+                        <div className="text-white mb-4 px-3">
+                          <ul className="text-start" style={{ fontSize: "0.9rem" }}>
+                            {s.features.map((feature, index) => (
+                              <li key={index} className="mb-2">{feature}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        <Link
+                          to={s.link}
+                          className="btn py-2 px-4"
+                          style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "5px", textDecoration: "none" }}
+                          onMouseEnter={(e) => hoverSwap(e, "#001659")}
+                          onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
+                        >
+                          Read More
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Always visible bottom bar */}
                   <div
-                    className="d-flex justify-content-center align-items-center"
-                    style={{ width: "80px", height: "80px", backgroundColor: "#FF5E15" }}
+                    className="service-tytle d-flex justify-content-between align-items-center p-3"
+                    style={{ backgroundColor: "white", borderTop: "1px solid #eee" }}
                   >
-                    <i className={`${s.icon} fa-2x`} style={{ color: "#001659" }}></i>
+                    <h4 style={{ color: "#001659" }}>{s.title}</h4>
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{ width: "80px", height: "80px", backgroundColor: "#FF5E15" }}
+                    >
+                      <i className={`${s.icon} fa-2x`} style={{ color: "#001659" }}></i>
+                    </div>
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
+        ) : searchTerm ? (
+          <div className="text-center py-5">
+            <div className="mb-4">
+              <i className="fas fa-search fa-3x text-muted"></i>
             </div>
-          ))}
-        </div>
+            <h4 className="mb-3">No services found for "{searchTerm}"</h4>
+            <p className="text-muted mb-4">Please try a different search term or browse all our services below.</p>
+            <Link 
+              to="/services" 
+              className="btn py-2 px-4"
+              style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "5px", textDecoration: "none" }}
+            >
+              View All Services
+            </Link>
+          </div>
+        ) : (
+          <div className="text-center py-5">
+            <div className="mb-4">
+              <i className="fas fa-exclamation-circle fa-3x text-muted"></i>
+            </div>
+            <h4 className="mb-3">No services available at the moment</h4>
+            <p className="text-muted">Please check back later or contact us for more information.</p>
+          </div>
+        )}
 
-        {/* More Services Button */}
-        <div className="col-12 text-center mt-4">
-          <Link
-            to="/services"
-            className="btn py-3 px-5"
-            style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "0", textDecoration: "none" }}
-            onMouseEnter={(e) => hoverSwap(e, "#001659")}
-            onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
-          >
-            More Services
-          </Link>
-        </div>
+        {/* More Services Button - Only show if not in search mode */}
+        {!searchTerm && filteredServices.length > 0 && (
+          <div className="col-12 text-center mt-4">
+            <Link
+              to="/services"
+              className="btn py-3 px-5"
+              style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "5px", textDecoration: "none" }}
+              onMouseEnter={(e) => hoverSwap(e, "#001659")}
+              onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
+            >
+              More Services
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
