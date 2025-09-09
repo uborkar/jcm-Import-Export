@@ -101,7 +101,7 @@ const Legacy = () => {
       content: "Believing that business is not only about transactions but also about impressions, Rajmalji always emphasized professionalism. Whether it was arriving for international meetings in a crisp suit, or showcasing Indian fabrics with pride, his style and confidence made JCM stand out in the crowd of global traders."
     },
     {
-      title: "FAILURE IS IMPORTANT FOR SUCCESS",
+      title: "FAILURE IS IMPORTANT ",
       image: failureSuccess,
       icon: timelineIcons.origin[4],
       content: "Initial attempts to expand into chemicals and electronic appliances brought hurdles, but Rajmalji believed failures were stepping stones. Each challenge taught him lessons in international logistics, supplier management, and quality assurance. His resilience laid the foundation for JCM's strong presence in multiple industries."
@@ -176,12 +176,12 @@ const Legacy = () => {
       content: "JCM is committed to achieving carbon-neutral operations by 2035. From renewable energy-powered warehouses to sustainable sourcing, the company aims to be a leader in green trade practices that benefit both business and the environment."
     },
     {
-      title: "SKILL DEVELOPMENT & EMPLOYMENT",
+      title: "SKILL DEVELOPMENT ",
       icon: timelineIcons.future[4],
       content: "The future vision includes training young entrepreneurs and providing employment opportunities in the import-export sector, especially in rural India, to uplift communities and create a new generation of trade professionals."
     },
     {
-      title: "LEGACY FOR FUTURE GENERATIONS",
+      title: "FUTURE GENERATIONS",
       icon: timelineIcons.future[5],
       content: "Carrying forward the legacy of its founders, JCM envisions becoming one of the most respected global trading hubs, balancing profitability with social responsibility and innovation to create lasting value for all stakeholders."
     }
@@ -280,7 +280,7 @@ const Legacy = () => {
               </div>
 
               {/* Timeline Content */}
-              <div className="container-fluid py-5">
+              <div className="container-fluid pt-5">
                 <div className="container">
                   <div className="timeline-content">
                     <div className="horizontal-timeline">
