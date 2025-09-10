@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import About from '../sections/About';
 import Features from '../sections/Features';
 import Counter from '../sections/Counter';
-import Team from '../sections/Team';
+// import Team from '../sections/Team';
+import Leadership from '../sections/Leadership';
 const AboutPage = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const AboutPage = () => {
       <About />
       <Features />
       <Counter />
-      <Team />
+      <Leadership />
     </>
   );
 };

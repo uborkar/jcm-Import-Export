@@ -16,8 +16,8 @@ export const FoodAgro = () => {
               <div className="et_pb_text et_pb_text_align_left et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
-                    <div className="inner-left">
-                      <h1>Pulses & Grains</h1>
+                    <div className="inner-left" >
+                      <h1 style={{ color: "#001659" }}>Pulses & Grains</h1>
                       <p>
                         JCM Import Export is a leading importer and supplier of
                         high-quality pulses and grains, offering a variety of
@@ -80,7 +80,7 @@ export const FoodAgro = () => {
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
-                      <h2>Bulk Pack</h2>
+                      <h2 style={{ color: "#001659" }}>Bulk Pack</h2>
                       <p>
                         Our bulk products are available in various packaging
                         options to meet different market needs. We supply to

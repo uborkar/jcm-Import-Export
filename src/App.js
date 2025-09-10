@@ -13,6 +13,7 @@ import Footer from "./components/common/Footer";
 import Home from "./components/pages/Home";
 import AboutPage from "./components/pages/AboutPage";
 import ServicesPage from "./components/pages/ServicesPage";
+// import GalleryPage from './components/pages/GalleryPage';
 import ExportServicesPage from "./components/pages/ExportServicesPage";
 import ImportServicesPage from "./components/pages/ImportServicesPage";
 import ValueAddedServicesPage from "./components/pages/ValueAddedServicesPage";
@@ -159,6 +160,7 @@ function App() {
             element={<ValueAddedServicesPage />}
           />
           <Route path="/projects" element={<ProjectsPage />} />
+          {/* <Route path="/gallery" element={<GalleryPage />} /> */}
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/legacy" element={<Legacy />} />
           <Route path="/blog" element={<BlogPage />} />

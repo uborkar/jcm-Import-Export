@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import service1 from '../../assets/img/daal.jpg';
-import service2 from '../../assets/img/chem-pro.jpg';
-import service3 from '../../assets/img/other_re.jpg';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import service1 from "../../assets/img/daal.jpg";
+import service2 from "../../assets/img/chem-pro.jpg";
+import service3 from "../../assets/img/other_re.jpg";
 
 const Services = () => {
+  const fontStyle = {
+    fontFamily: "inherit !important",
+  };
   const [hovered, setHovered] = useState(null);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [filteredServices, setFilteredServices] = useState([]);
   const location = useLocation();
 
@@ -18,64 +21,70 @@ const Services = () => {
   };
 
   const allServices = [
-    { 
-      id: 1, 
-      img: service1, 
-      icon: "fas fa-globe", 
+    {
+      id: 1,
+      img: service1,
+      icon: "fas fa-globe",
       title: "Export Services",
-      description: "Our comprehensive export solutions help your business reach global markets efficiently and reliably.",
+      description:
+        "Our comprehensive export solutions help your business reach global markets efficiently and reliably.",
       features: [
         "Agro & Food Products – Grains, spices, fruits,food packages",
         "Textiles & Apparel – Fabrics, garments",
         "Industrial Goods – Engineering products, machinery",
-        "Export Documentation & Licensing – Complete paperwork and certification "
+        "Export Documentation & Licensing – Complete paperwork and certification ",
       ],
-      link: "/export-services"
+      link: "/export-services",
     },
-    { 
-      id: 2, 
-      img: service2, 
-      icon: "fas fa-ship", 
+    {
+      id: 2,
+      img: service2,
+      icon: "fas fa-ship",
       title: "Import Services",
-      description: "Streamlined import services that ensure timely delivery and compliance with all regulations.",
+      description:
+        "Streamlined import services that ensure timely delivery and compliance with all regulations.",
       features: [
         "Specialty Foods & Ingredients – Premium chocolates, exotic fruits",
         "Machinery & Equipment – Industrial machinery",
         "Consumer Goods – Electronics, appliances",
-        "Chemicals & Raw Materials – For manufacturing, pharmaceuticals"
+        "Chemicals & Raw Materials – For manufacturing, pharmaceuticals",
       ],
-      link: "/import-services"
+      link: "/import-services",
     },
-    { 
-      id: 3, 
-      img: service3, 
-      icon: "fas fa-chart-line", 
+    {
+      id: 3,
+      img: service3,
+      icon: "fas fa-chart-line",
       title: "Value Added Services",
-      description: "Enhanced services that add value to your trade operations and business growth.",
+      description:
+        "Enhanced services that add value to your trade operations and business growth.",
       features: [
         "Logistics  – Land transportation with reliable partners",
         "Product Sourcing & Quality Inspection – Quality Check, product testing",
         "Private Labeling & Packaging – Custom branding and packaging ",
-        "Market Research & Trade Consulting "
+        "Market Research & Trade Consulting ",
       ],
-      link: "/value-added-services"
-    }
+      link: "/value-added-services",
+    },
   ];
 
   useEffect(() => {
     // Get search term from URL
     const params = new URLSearchParams(location.search);
-    const searchParam = params.get('search');
-    
+    const searchParam = params.get("search");
+
     if (searchParam) {
       setSearchTerm(searchParam);
       // Filter services based on search term
-      const filtered = allServices.filter(service => 
-        service.title.toLowerCase().includes(searchParam.toLowerCase()) ||
-        service.description.toLowerCase().includes(searchParam.toLowerCase()) ||
-        service.features.some(feature => 
-          feature.toLowerCase().includes(searchParam.toLowerCase())
-        )
+      const filtered = allServices.filter(
+        (service) =>
+          service.title.toLowerCase().includes(searchParam.toLowerCase()) ||
+          service.description
+            .toLowerCase()
+            .includes(searchParam.toLowerCase()) ||
+          service.features.some((feature) =>
+            feature.toLowerCase().includes(searchParam.toLowerCase())
+          )
       );
       setFilteredServices(filtered);
     } else {
@@ -91,13 +100,11 @@ const Services = () => {
           <div className="alert alert-info mb-4">
             <div className="d-flex justify-content-between align-items-center">
               <div>
-                Showing {filteredServices.length} result{filteredServices.length !== 1 ? 's' : ''} for: 
+                Showing {filteredServices.length} result
+                {filteredServices.length !== 1 ? "s" : ""} for:
                 <strong> "{searchTerm}"</strong>
               </div>
-              <Link 
-                to="/services" 
-                className="btn btn-sm btn-outline-secondary"
-              >
+              <Link to="/services" className="btn btn-sm btn-outline-secondary">
                 Clear Search
               </Link>
             </div>
@@ -105,8 +112,13 @@ const Services = () => {
         )}
 
         <div className="text-center mx-auto pb-5" style={{ maxWidth: "800px" }}>
-          <p className="text-uppercase fs-5 mb-0" style={{ color: "#FF5E15" }}>Our Services</p>
-          <h2 className="display-4 text-capitalize mb-3" style={{ color: "#001659" }}>
+          <p className="text-uppercase fs-5 mb-0" style={{ color: "#FF5E15" }}>
+            Our Services
+          </p>
+          <h2
+            className="display-4 text-capitalize mb-3"
+            style={{ color: "#001659" }}
+          >
             Global Trade Solutions & Services
           </h2>
         </div>
@@ -122,40 +134,83 @@ const Services = () => {
                   onMouseLeave={() => setHovered(null)}
                 >
                   {/* Image wrapper */}
-                  <div className="service-img position-relative" style={{ overflow: "hidden" }}>
+                  <div
+                    className="service-img position-relative"
+                    style={{ overflow: "hidden" }}
+                  >
                     <img
                       src={s.img}
                       alt={s.title}
                       className="img-fluid w-100"
-                      style={{ transition: "transform 0.4s ease", transform: hovered === s.id ? "scale(1.1)" : "scale(1)" }}
+                      style={{
+                        transition: "transform 0.4s ease",
+                        transform: hovered === s.id ? "scale(1.1)" : "scale(1)",
+                      }}
                     />
 
                     {/* Overlay appears on hover */}
                     {hovered === s.id && (
                       <div
                         className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center"
-                        style={{ backgroundColor: "rgba(0,0,0,0.6)", transition: "all 0.3s ease" }}
+                        style={{
+                          backgroundColor: "rgba(0,0,0,0.6)",
+                          transition: "all 0.3s ease",
+                        }}
                       >
                         <div
                           className="d-flex justify-content-center align-items-center"
-                          style={{ width: "120px", height: "120px", backgroundColor: "#FF5E15" }}
+                          style={{
+                            width: "120px",
+                            height: "120px",
+                            backgroundColor: "#FF5E15",
+                          }}
                         >
-                          <i className={`${s.icon} fa-4x`} style={{ color: "#001659" }}></i>
+                          <i
+                            className={`${s.icon} fa-4x`}
+                            style={{ color: "#001659" }}
+                          ></i>
                         </div>
-                        <Link to={s.link} className="d-block fs-4 my-4" style={{ color: "white", textDecoration: "none" }}>
+                        <Link
+                          to={s.link}
+                          className="d-block fs-4 my-4 service-title-hover"
+                          style={{
+                            color: "white",
+                            textDecoration: "none",
+                            ...fontStyle,
+                          }}
+                        >
                           {s.title}
                         </Link>
-                        <div className="text-white mb-4 px-3">
-                          <ul className="text-start" style={{ fontSize: "0.9rem" }}>
+
+                        <div
+                          className="text-white mb-4 px-3 service-features"
+                          style={fontStyle}
+                        >
+                          <ul
+                            className="text-start"
+                            style={{ fontSize: "0.9rem", ...fontStyle }}
+                          >
                             {s.features.map((feature, index) => (
-                              <li key={index} className="mb-2">{feature}</li>
+                              <li
+                                key={index}
+                                className="mb-2"
+                                style={fontStyle}
+                              >
+                                {feature}
+                              </li>
                             ))}
                           </ul>
                         </div>
                         <Link
                           to={s.link}
-                          className="btn py-2 px-4"
-                          style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "5px", textDecoration: "none" }}
+                          className="btn py-2 px-4 service-button"
+                          style={{
+                            backgroundColor: "#FF5E15",
+                            color: "white",
+                            borderRadius: "5px",
+                            textDecoration: "none",
+                            ...fontStyle,
+                          }}
                           onMouseEnter={(e) => hoverSwap(e, "#001659")}
                           onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
                         >
@@ -168,14 +223,24 @@ const Services = () => {
                   {/* Always visible bottom bar */}
                   <div
                     className="service-tytle d-flex justify-content-between align-items-center p-3"
-                    style={{ backgroundColor: "white", borderTop: "1px solid #eee" }}
+                    style={{
+                      backgroundColor: "white",
+                      borderTop: "1px solid #eee",
+                    }}
                   >
                     <h4 style={{ color: "#001659" }}>{s.title}</h4>
                     <div
                       className="d-flex justify-content-center align-items-center"
-                      style={{ width: "80px", height: "80px", backgroundColor: "#FF5E15" }}
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        backgroundColor: "#FF5E15",
+                      }}
                     >
-                      <i className={`${s.icon} fa-2x`} style={{ color: "#001659" }}></i>
+                      <i
+                        className={`${s.icon} fa-2x`}
+                        style={{ color: "#001659" }}
+                      ></i>
                     </div>
                   </div>
                 </div>
@@ -188,11 +253,19 @@ const Services = () => {
               <i className="fas fa-search fa-3x text-muted"></i>
             </div>
             <h4 className="mb-3">No services found for "{searchTerm}"</h4>
-            <p className="text-muted mb-4">Please try a different search term or browse all our services below.</p>
-            <Link 
-              to="/services" 
+            <p className="text-muted mb-4">
+              Please try a different search term or browse all our services
+              below.
+            </p>
+            <Link
+              to="/services"
               className="btn py-2 px-4"
-              style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "5px", textDecoration: "none" }}
+              style={{
+                backgroundColor: "#FF5E15",
+                color: "white",
+                borderRadius: "5px",
+                textDecoration: "none",
+              }}
             >
               View All Services
             </Link>
@@ -203,7 +276,9 @@ const Services = () => {
               <i className="fas fa-exclamation-circle fa-3x text-muted"></i>
             </div>
             <h4 className="mb-3">No services available at the moment</h4>
-            <p className="text-muted">Please check back later or contact us for more information.</p>
+            <p className="text-muted">
+              Please check back later or contact us for more information.
+            </p>
           </div>
         )}
 
@@ -213,7 +288,12 @@ const Services = () => {
             <Link
               to="/services"
               className="btn py-3 px-5"
-              style={{ backgroundColor: "#FF5E15", color: "white", borderRadius: "5px", textDecoration: "none" }}
+              style={{
+                backgroundColor: "#FF5E15",
+                color: "white",
+                borderRadius: "5px",
+                textDecoration: "none",
+              }}
               onMouseEnter={(e) => hoverSwap(e, "#001659")}
               onMouseLeave={(e) => hoverReset(e, "#FF5E15")}
             >

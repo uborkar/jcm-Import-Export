@@ -6,13 +6,64 @@ h1 {
   font-weight: 700; /* example: bold */
 }
 
-p ,h2{
+p ,h2,h3,h5,h6,a,li,span,.text-muted{
   font-family: 'Playfair Display', serif;
   font-weight: 400; /* regular */
 }
-h1,h4 ,a.h4 {
+h1,h4,a.h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+}
+/* Add to your main style.css file */
+
+/* Ensure all service card elements use Playfair Display */
+.service-item,
+.service-overlay,
+.service-title-hover,
+.service-features,
+.service-features ul,
+.service-features li,
+.service-button,
+.service-item h4,
+.service-item p,
+.service-item ul,
+.service-item li,
+.service-item a {
+  font-family: 'Playfair Display', serif !important;
+}
+
+/* Specific font weights */
+.service-title-hover {
+  font-weight: 700 !important;
+}
+
+.service-features li {
+  font-weight: 400 !important;
+}
+
+.service-button {
+  font-weight: 500 !important;
+}
+
+/* Fix for all buttons and button links */
+.btn,
+button,
+a.btn,
+[class*="btn-"],
+.service-button,
+.service-item .btn,
+.service-item button,
+.service-item a.btn {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 500 !important;
+}
+
+/* Specific fix for inline-styled buttons */
+a[style*="background-color: #FF5E15"],
+a[style*="border-radius: 5px"],
+a[style*="border-radius: 30px"] {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 500 !important;
 }
 /*** Spinner Start ***/
 /*** Spinner ***/

@@ -227,7 +227,7 @@ const Legacy = () => {
                     The only thing he never learned was to give up. Explore our origin story, evolution, and vision for the future.
                   </p>
                   <Link 
-                    to="/leadership" 
+                    to="/About" 
                     className="btn py-3 px-5 mt-3" 
                     style={{ 
                       backgroundColor: "#001659", 

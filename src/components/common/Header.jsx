@@ -10,7 +10,7 @@ const Header = () => {
 
   // Load search history from localStorage on component mount
   useEffect(() => {
-    const savedHistory = localStorage.getItem('searchHistory');
+    const savedHistory = localStorage.getItem("searchHistory");
     if (savedHistory) {
       setSearchHistory(JSON.parse(savedHistory));
     }
@@ -18,7 +18,7 @@ const Header = () => {
 
   // Save search history to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
   }, [searchHistory]);
 
   const isActive = (path) => {
@@ -75,7 +75,6 @@ const Header = () => {
               >
                 Services
               </Link>
-
               <div className="nav-item dropdown">
                 <a
                   href="#"
@@ -85,7 +84,7 @@ const Header = () => {
                     isActive("/Textile") ||
                     isActive("/Midc") ||
                     isActive("/global-market") ||
-                    isActive("/chemical")  ||
+                    isActive("/chemical") ||
                     isActive("/logistics")
                       ? "active"
                       : ""
@@ -121,12 +120,13 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-              <Link
-                to="/projects"
-                className={`nav-item nav-link ${isActive("/projects")}`}
+              {/*In your Header component, replace the Leadership link with: */} 
+              {/* <Link
+                to="/gallery"
+                className={`nav-item nav-link ${isActive("/gallery")}`}
               >
-                Leadership
-              </Link>
+                Gallery
+              </Link> */}
               <Link
                 to="/contact"
                 className={`nav-item nav-link ${isActive("/contact")}`}
@@ -163,10 +163,10 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      
-      <SearchModal 
-        onSearch={handleSearch} 
-        searchHistory={searchHistory} 
+
+      <SearchModal
+        onSearch={handleSearch}
+        searchHistory={searchHistory}
         onClearHistory={clearSearchHistory}
       />
     </>

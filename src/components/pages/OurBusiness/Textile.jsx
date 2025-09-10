@@ -16,7 +16,7 @@ export const Textile = () => {
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
-                      <h1>Textile & Garments</h1>
+                      <h1 style={{ color: "#001659" }}>Textile & Garments</h1>
                       <p>
                         JCM Import Export is a premier supplier of high-quality
                         textiles and garments, offering a diverse range of
@@ -79,7 +79,7 @@ export const Textile = () => {
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
-                      <h2>Bulk Manufacturing</h2>
+                      <h2 style={{ color: "#001659" }}>Bulk Manufacturing</h2>
                       <p>
                         Our bulk textile products are available for wholesale
                         and large-scale orders. We supply to fashion brands,
