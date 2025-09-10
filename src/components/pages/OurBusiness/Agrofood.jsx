@@ -107,7 +107,7 @@ export const FoodAgro = () => {
                     display: "inline-block",
                   }}
                 >
-                  Know More
+                  Explore Our Products
                 </Link>
               </div>
             </Col>
