@@ -30,6 +30,23 @@ export const Textile = () => {
                   </div>
                 </div>
               </div>
+               <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
+                <Link
+                  to="/Textiles"
+                  className="et_pb_button pad-sec2 et_pb_bg_layout_light btn"
+                  style={{
+                    backgroundColor: "#001659",
+                    border: "none",
+                    borderRadius: "0",
+                    padding: "0.5rem 1.5rem",
+                    color: "white",
+                    textDecoration: "none",
+                    display: "inline-block",
+                  }}
+                >
+                  Explore Collections
+                </Link>
+              </div>
             </Col>
             <Col lg={4} className="et_pb_column et-last-child">
               <div className="et_pb_image">
@@ -93,23 +110,7 @@ export const Textile = () => {
                   </div>
                 </div>
               </div>
-              <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
-                <Link
-                  to="/Textiles"
-                  className="et_pb_button pad-sec2 et_pb_bg_layout_light btn"
-                  style={{
-                    backgroundColor: "#001659",
-                    border: "none",
-                    borderRadius: "0",
-                    padding: "0.5rem 1.5rem",
-                    color: "white",
-                    textDecoration: "none",
-                    display: "inline-block",
-                  }}
-                >
-                  Explore Collections
-                </Link>
-              </div>
+             
             </Col>
           </Row>
         </Container>
