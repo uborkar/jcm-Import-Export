@@ -40,7 +40,7 @@ import Textiles from "./components/pages/OurBusiness/products/Textile";
 import Textile from "./components/pages/OurBusiness/Textile";
 import Midc from "./components/pages/OurBusiness/Midc";
 import Global from "./components/pages/OurBusiness/Global";
-import Chemicals from "./components/pages/OurBusiness/Chemical";
+import Chemical from "./components/pages/OurBusiness/Chemical";
 import Logistics from "./components/pages/OurBusiness/Logistics";
 
 // Import ONLY essential CSS
@@ -140,7 +140,7 @@ function App() {
         <Topbar />
         <Header />
         <SearchModal />
-        <SpeedInsights />
+        <SpeedInsights/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
@@ -155,7 +155,7 @@ function App() {
           <Route path="/Textile" element={<Textile />} />
           <Route path="/Midc" element={<Midc />} />
           <Route path="/global-market" element={<Global />} />
-          <Route path="/chemical" element={<Chemicals />} />
+          <Route path="/chemical" element={<Chemical />} />
           <Route path="/logistics" element={<Logistics />} />
           <Route
             path="/value-added-services"

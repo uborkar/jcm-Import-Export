@@ -1,82 +1,165 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Badge, Button, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import textileBanner from "../../../../assets/img/trendy-fabris-shades.jpg";
-import apparelImage from "../../../../assets/img/apparels.jpg"; // You'll need to add this image
-import fabricsImage from "../../../../assets/img/cotton-fabric.jpg"; // You'll need to add this image
-import garmentsImage from "../../../../assets/img/towels.jpg"; // You'll need to add this image
-import packagingImage from "../../../../assets/img/cotton-fabric.jpg"; // You'll need to add this image
+import naturalFibersImage from "../../../../assets/img/naturalfiber.jpg";
+import syntheticFibersImage from "../../../../assets/img/syntheticfiber.jpg";
+import blendedFibersImage from "../../../../assets/img/blendedfiber.jpg";
+import packagingImage from "../../../../assets/img/cotton-fabric.jpg";
 
 export const Textile = () => {
-  const [activeTab, setActiveTab] = useState("apparel");
+  const [activeTab, setActiveTab] = useState("natural");
 
-  const products = {
-    apparel: {
-      name: "Apparel Collection",
-      image: apparelImage,
-      description: "Premium quality apparel collection featuring trendy and timeless fashion pieces. Our garments are crafted with precision, using the finest fabrics and following the latest fashion trends.",
-      details: "Our apparel collection includes a wide range of clothing items from casual wear to formal attire. Each piece is designed with attention to detail, ensuring perfect fit, comfort, and style. We follow sustainable practices in our manufacturing process and maintain strict quality control standards.",
+  const textileCategories = {
+    natural: {
+      name: "Natural Fiber Textiles",
+      image: naturalFibersImage,
+      description: "Premium natural fibers sourced from plants and animals. Eco-friendly, breathable, and perfect for sustainable fashion.",
+      details: "Our natural fiber collection includes the finest quality materials sourced from ethical and sustainable producers. These textiles are biodegradable, hypoallergenic, and offer superior comfort for various applications from fashion to home textiles.",
+      fibers: {
+        cotton: {
+          name: "Cotton",
+          source: "Plant (Cotton plant)",
+          properties: "Soft, breathable, lightweight, absorbent",
+          uses: "Shirts, dresses, bed sheets, towels, undergarments",
+          specialNotes: "Hypoallergenic, suitable for sensitive skin"
+        },
+        linen: {
+          name: "Linen",
+          source: "Plant (Flax plant)",
+          properties: "Strong, absorbent, natural shine, quick-drying",
+          uses: "Summer clothing, tablecloths, handkerchiefs, upholstery",
+          specialNotes: "Gets softer with every wash, ideal for hot climates"
+        },
+        silk: {
+          name: "Silk",
+          source: "Animal (Silkworm cocoons)",
+          properties: "Smooth, shiny, luxurious, lightweight yet strong",
+          uses: "Sarees, ties, dresses, scarves, upholstery",
+          specialNotes: "Symbol of elegance, requires delicate care"
+        },
+        wool: {
+          name: "Wool",
+          source: "Animal (Sheep, goats, alpacas, etc.)",
+          properties: "Warm, elastic, wrinkle-resistant, insulating",
+          uses: "Sweaters, coats, blankets, carpets",
+          specialNotes: "Naturally flame-resistant, excellent for winters"
+        },
+        jute: {
+          name: "Jute",
+          source: "Plant (Jute stem)",
+          properties: "Coarse, strong, eco-friendly, biodegradable",
+          uses: "Bags, ropes, mats, carpets, packaging",
+          specialNotes: "Known as 'Golden Fiber' due to its natural sheen"
+        }
+      },
       specs: {
-        type: "Ready-to-Wear Apparel",
-        materials: "Cotton, Silk, Linen, Blends",
-        sizes: "XS to XXL (International Sizing)",
-        finish: "Premium stitching and finishing",
-        quality: "Export Quality Standards",
-        packaging: "Individual poly bags with hangers"
+        type: "Natural Plant and Animal Fibers",
+        materials: "Cotton, Linen, Silk, Wool, Jute",
+        sustainability: "Biodegradable and Eco-friendly",
+        comfort: "Breathable and Skin-friendly",
+        applications: "Fashion, Home Textiles, Accessories",
+        quality: "Premium Grade A Quality"
       },
       features: {
-        trend: "Latest fashion trends",
-        comfort: "Superior comfort and fit",
-        durability: "Long-lasting quality",
-        variety: "Wide range of styles",
-        sustainable: "Eco-friendly practices"
+        ecoFriendly: "Environmentally sustainable",
+        comfort: "Superior comfort and breathability",
+        durability: "Long-lasting natural fibers",
+        variety: "Wide range of natural options",
+        health: "Hypoallergenic and skin-friendly"
       }
     },
-    fabrics: {
-      name: "Premium Fabrics",
-      image: fabricsImage,
-      description: "High-quality fabrics sourced from the best mills across India and beyond. Our fabric collection includes natural fibers, blends, and specialty textiles for various applications.",
-      details: "We offer an extensive range of fabrics including cotton, silk, linen, wool, and synthetic blends. Our fabrics are known for their superior quality, texture, and durability. Whether you need fabrics for fashion, home textiles, or specialized applications, we have the right material for your needs.",
+    synthetic: {
+      name: "Synthetic Fiber Textiles",
+      image: syntheticFibersImage,
+      description: "High-performance synthetic fibers engineered for durability, functionality, and versatile applications.",
+      details: "Our synthetic fiber collection offers advanced materials with specialized properties for various industrial and fashion applications. These textiles are designed for durability, easy care, and specific performance characteristics.",
+      fibers: {
+        polyester: {
+          name: "Polyester",
+          source: "Man-made (Petrochemical-based)",
+          properties: "Durable, wrinkle-resistant, quick-drying, lightweight",
+          uses: "T-shirts, pants, sportswear, curtains, upholstery",
+          specialNotes: "Commonly blended with cotton for comfort"
+        },
+        nylon: {
+          name: "Nylon",
+          source: "Man-made (Polyamide polymer)",
+          properties: "Strong, stretchable, resistant to abrasion",
+          uses: "Hosiery, activewear, swimwear, ropes, tents",
+          specialNotes: "Known as the world's first fully synthetic fiber"
+        },
+        acrylic: {
+          name: "Acrylic",
+          source: "Man-made (Polyacrylonitrile polymer)",
+          properties: "Soft, wool-like, warm, lightweight",
+          uses: "Sweaters, blankets, shawls, carpets",
+          specialNotes: "Affordable alternative to wool"
+        },
+        rayon: {
+          name: "Rayon (Viscose)",
+          source: "Semi-synthetic (Wood pulp + chemical process)",
+          properties: "Soft, breathable, silk-like finish",
+          uses: "Dresses, linings, upholstery, sarees",
+          specialNotes: "Called 'artificial silk,' versatile for fashion & home décor"
+        }
+      },
       specs: {
-        type: "Woven and Knitted Fabrics",
-        materials: "Natural and Synthetic Fibers",
-        width: "44/45\", 56/58\", and custom widths",
-        weight: "Lightweight to Heavyweight",
-        finish: "Various finishes available",
-        application: "Fashion, Home, Technical"
+        type: "Synthetic and Semi-Synthetic Fibers",
+        materials: "Polyester, Nylon, Acrylic, Rayon",
+        durability: "High strength and longevity",
+        maintenance: "Easy care and quick drying",
+        applications: "Sportswear, Outdoor Gear, Home Textiles",
+        quality: "Industrial Grade Standards"
       },
       features: {
-        quality: "Mill-direct quality",
-        variety: "Extensive range of options",
-        custom: "Customization available",
-        consistency: "Consistent quality across batches",
-        sustainable: "Eco-friendly options"
+        performance: "Engineered for specific functions",
+        durability: "Exceptional strength and wear resistance",
+        maintenance: "Low maintenance and easy care",
+        versatility: "Wide range of applications",
+        costEffective: "Affordable production and pricing"
       }
     },
-    garments: {
-      name: "Garment Manufacturing",
-      image: garmentsImage,
-      description: "Complete garment manufacturing solutions from design to delivery. We specialize in producing high-quality garments for brands and retailers worldwide.",
-      details: "Our state-of-the-art manufacturing facilities are equipped with modern technology and operated by skilled professionals. We offer end-to-end solutions including design development, pattern making, sampling, production, quality control, and packaging. Our commitment to ethical manufacturing practices ensures fair working conditions and environmental responsibility.",
+    blended: {
+      name: "Blended Textiles",
+      image: blendedFibersImage,
+      description: "Innovative fabric blends that combine the best properties of natural and synthetic fibers for enhanced performance.",
+      details: "Our blended textiles offer the perfect combination of comfort, durability, and functionality. By merging natural fibers with synthetics, we create materials that outperform pure fabrics in various applications while maintaining cost-effectiveness.",
+      fibers: {
+        polycotton: {
+          name: "Polycotton (Polyester + Cotton)",
+          source: "Blend (Natural + Synthetic)",
+          properties: "Durable, wrinkle-resistant, breathable, cost-effective",
+          uses: "Uniforms, shirts, bed linen, trousers",
+          specialNotes: "Combines comfort of cotton with durability of polyester"
+        },
+        cottonSilk: {
+          name: "Cotton-Silk",
+          source: "Blend (Natural Cotton + Natural Silk)",
+          properties: "Lightweight, soft, shiny, breathable",
+          uses: "Festive wear, sarees, kurtas, dresses",
+          specialNotes: "Elegant look with affordable pricing compared to pure silk"
+        }
+      },
       specs: {
-        type: "Cut-Make-Trim Services",
-        capacity: "50,000 pieces monthly",
-        leadTime: "4-6 weeks for production",
-        minOrder: "500 pieces per style",
-        compliance: "ISO, SEDEX, BSCI certified",
-        quality: "Stringent QC at each stage"
+        type: "Natural-Synthetic Hybrid Fabrics",
+        materials: "Polycotton, Cotton-Silk, and Custom Blends",
+        benefits: "Combined advantages of multiple fibers",
+        applications: "Fashion, Uniforms, Home Textiles",
+        customization: "Tailored blend ratios available",
+        quality: "Optimized performance standards"
       },
       features: {
-        expertise: "Years of manufacturing experience",
-        technology: "Modern equipment and technology",
-        flexibility: "Small to large order acceptance",
-        compliance: "Ethical and compliant practices",
-        reliability: "On-time delivery guarantee"
+        balanced: "Best properties of combined fibers",
+        value: "Cost-effective without compromising quality",
+        versatility: "Suitable for diverse applications",
+        durability: "Enhanced strength and longevity",
+        comfort: "Maintains natural fiber comfort"
       }
     }
   };
 
-  const currentProduct = products[activeTab];
+  const currentCategory = textileCategories[activeTab];
 
   return (
     <>
@@ -90,17 +173,15 @@ export const Textile = () => {
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
                       <Badge bg="warning" className="mb-3 fs-6">Premium Quality</Badge>
-                      <h1 className="display-4 fw-bold mb-4 " style={{ color: "#001659" }}>Textile & Garments Collection</h1>
+                      <h1 className="display-4 fw-bold mb-4 " style={{ color: "#001659" }}>Textile & Fabric Collection</h1>
                       <p className="lead text-muted">
-                        JCM Import Export is a premier supplier of high-quality textiles and garments, 
-                        offering a diverse range of fabrics, clothing, and textile products. We source 
-                        from trusted manufacturers and provide premium materials including cotton, silk, 
-                        wool, synthetic fabrics, and finished garments for the fashion industry and 
-                        retail markets worldwide.
+                        JCM Import Export offers a comprehensive range of premium textiles including natural,
+                        synthetic, and blended fabrics. We source from trusted manufacturers worldwide to provide
+                        high-quality materials for fashion, home textiles, and industrial applications.
                       </p>
                       <div className="d-flex flex-wrap gap-2 mt-4">
                         <Badge bg="success" className="fs-6">Export Quality</Badge>
-                        <Badge bg="info" className="fs-6">Sustainable</Badge>
+                        <Badge bg="info" className="fs-6">Sustainable Options</Badge>
                         <Badge bg="primary" className="fs-6">Customizable</Badge>
                       </div>
                     </div>
@@ -113,7 +194,7 @@ export const Textile = () => {
                 <span className="et_pb_image_wrap">
                   <img
                     src={textileBanner}
-                    alt="Textile and Garments Collection"
+                    alt="Textile and Fabric Collection"
                     className="img-fluid rounded shadow-lg"
                     style={{ width: "100%", height: "400px", objectFit: "cover" }}
                   />
@@ -130,14 +211,14 @@ export const Textile = () => {
           <Row className="et_pb_row">
             <Col lg={12}>
               <div className="text-center mb-5">
-                <h2 className="display-5 fw-bold  mb-3" style={{ color: "#001659" }}>Explore Our Textile Varieties</h2>
+                <h2 className="display-5 fw-bold  mb-3" style={{ color: "#001659" }}>Explore Our Textile Categories</h2>
                 <p className="lead text-muted">Select from our premium range of textile products</p>
               </div>
               
               <Card className="shadow-lg border-0">
                 <Card.Header className="bg-white border-0">
                   <ul className="nav nav-tabs nav-fill border-0" role="tablist">
-                    {Object.entries(products).map(([key, product]) => (
+                    {Object.entries(textileCategories).map(([key, category]) => (
                       <li key={key} className="nav-item">
                         <button
                           className={`nav-link ${activeTab === key ? 'active' : ''} fw-semibold`}
@@ -150,7 +231,7 @@ export const Textile = () => {
                             backgroundColor: 'transparent'
                           }}
                         >
-                          {product.name}
+                          {category.name}
                         </button>
                       </li>
                     ))}
@@ -161,19 +242,19 @@ export const Textile = () => {
                   <Row className="align-items-center">
                     <Col lg={6} className="text-center">
                       <img
-                        src={currentProduct.image}
-                        alt={currentProduct.name}
+                        src={currentCategory.image}
+                        alt={currentCategory.name}
                         className="img-fluid rounded shadow"
                         style={{ width: "300px", height: "400px", objectFit: "cover" }}
                       />
                     </Col>
                     <Col lg={6}>
                       <div className="ps-lg-4">
-                        <h3 className="fw-bold  mb-3" style={{ color: "#001659" }}>{currentProduct.name}</h3>
-                        <p className="text-muted mb-4">{currentProduct.description}</p>
-                        <p className="mb-4">{currentProduct.details}</p>
+                        <h3 className="fw-bold  mb-3" style={{ color: "#001659" }}>{currentCategory.name}</h3>
+                        <p className="text-muted mb-4">{currentCategory.description}</p>
+                        <p className="mb-4">{currentCategory.details}</p>
                         
-                        <Row className="g-4">
+                        <Row className="g-4 mb-4">
                           <Col md={6}>
                             <Card className="h-100 border-0 shadow-sm">
                               <Card.Header className="bg-primary text-white">
@@ -181,12 +262,11 @@ export const Textile = () => {
                               </Card.Header>
                               <Card.Body>
                                 <ul className="list-unstyled mb-0">
-                                  <li className="mb-2"><strong>Type:</strong> {currentProduct.specs.type}</li>
-                                  <li className="mb-2"><strong>Materials:</strong> {currentProduct.specs.materials}</li>
-                                  <li className="mb-2"><strong>Sizes:</strong> {currentProduct.specs.sizes}</li>
-                                  <li className="mb-2"><strong>Finish:</strong> {currentProduct.specs.finish}</li>
-                                  <li className="mb-2"><strong>Quality:</strong> {currentProduct.specs.quality}</li>
-                                  <li><strong>Packaging:</strong> {currentProduct.specs.packaging}</li>
+                                  <li className="mb-2"><strong>Type:</strong> {currentCategory.specs.type}</li>
+                                  <li className="mb-2"><strong>Materials:</strong> {currentCategory.specs.materials}</li>
+                                  <li className="mb-2"><strong>Sustainability:</strong> {currentCategory.specs.sustainability}</li>
+                                  <li className="mb-2"><strong>Applications:</strong> {currentCategory.specs.applications}</li>
+                                  <li><strong>Quality:</strong> {currentCategory.specs.quality}</li>
                                 </ul>
                               </Card.Body>
                             </Card>
@@ -199,16 +279,40 @@ export const Textile = () => {
                               </Card.Header>
                               <Card.Body>
                                 <ul className="list-unstyled mb-0">
-                                  <li className="mb-2"><strong>Trend:</strong> {currentProduct.features.trend}</li>
-                                  <li className="mb-2"><strong>Comfort:</strong> {currentProduct.features.comfort}</li>
-                                  <li className="mb-2"><strong>Durability:</strong> {currentProduct.features.durability}</li>
-                                  <li className="mb-2"><strong>Variety:</strong> {currentProduct.features.variety}</li>
-                                  <li><strong>Sustainable:</strong> {currentProduct.features.sustainable}</li>
+                                  <li className="mb-2"><strong>Eco-Friendly:</strong> {currentCategory.features.ecoFriendly}</li>
+                                  <li className="mb-2"><strong>Comfort:</strong> {currentCategory.features.comfort}</li>
+                                  <li className="mb-2"><strong>Durability:</strong> {currentCategory.features.durability}</li>
+                                  <li className="mb-2"><strong>Variety:</strong> {currentCategory.features.variety}</li>
+                                  <li><strong>Value:</strong> {currentCategory.features.value || "Excellent price-performance ratio"}</li>
                                 </ul>
                               </Card.Body>
                             </Card>
                           </Col>
                         </Row>
+                        
+                        {/* Fiber Details Accordion */}
+                        <h4 className="fw-bold mt-4 mb-3" style={{ color: "#001659" }}>Fiber Types</h4>
+                        <Accordion defaultActiveKey="0" className="mb-4">
+                          {Object.entries(currentCategory.fibers).map(([fiberKey, fiber], index) => (
+                            <Accordion.Item key={fiberKey} eventKey={index.toString()}>
+                              <Accordion.Header>
+                                <strong>{fiber.name}</strong>
+                              </Accordion.Header>
+                              <Accordion.Body>
+                                <Row>
+                                  <Col md={6}>
+                                    <p><strong>Source:</strong> {fiber.source}</p>
+                                    <p><strong>Properties:</strong> {fiber.properties}</p>
+                                  </Col>
+                                  <Col md={6}>
+                                    <p><strong>Uses:</strong> {fiber.uses}</p>
+                                    <p><strong>Special Notes:</strong> {fiber.specialNotes}</p>
+                                  </Col>
+                                </Row>
+                              </Accordion.Body>
+                            </Accordion.Item>
+                          ))}
+                        </Accordion>
                       </div>
                     </Col>
                   </Row>
@@ -240,8 +344,8 @@ export const Textile = () => {
               <div className="ps-lg-4">
                 <h2 className="fw-bold  mb-4" style={{ color: "#001659" }}>Bulk Manufacturing & Wholesale</h2>
                 <p className="text-muted mb-4">
-                  Our bulk textile products are available for wholesale and large-scale orders. 
-                  We supply to fashion brands, retail chains, and garment manufacturers across 
+                  Our textile products are available for wholesale and large-scale orders. 
+                  We supply to fashion brands, retail chains, and manufacturers across 
                   global markets. Our manufacturing capabilities include:
                 </p>
                 
@@ -252,8 +356,8 @@ export const Textile = () => {
                         <i className="fas fa-pencil-ruler text-white fs-4"></i>
                       </div>
                       <div>
-                        <h6 className="mb-1">Custom Designs</h6>
-                        <small className="text-muted">Tailored to your specifications</small>
+                        <h6 className="mb-1">Custom Blends</h6>
+                        <small className="text-muted">Tailored fiber combinations</small>
                       </div>
                     </div>
                   </Col>
@@ -293,6 +397,9 @@ export const Textile = () => {
                 </Row>
                 
                 <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
+                  <Link to="/contact" className="btn btn-primary btn-lg px-4">
+                    Request Bulk Quote
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -306,7 +413,7 @@ export const Textile = () => {
           <Row className="et_pb_row">
             <Col lg={12}>
               <div className="text-center mb-5">
-                <h2 className="display-5 fw-bold  mb-3" style={{ color: "#001659" }}>Our Textile & Garment Solutions</h2>
+                <h2 className="display-5 fw-bold  mb-3" style={{ color: "#001659" }}>Our Textile Solutions</h2>
                 <p className="lead text-muted">Comprehensive services for the fashion and textile industry</p>
               </div>
             </Col>
@@ -316,13 +423,12 @@ export const Textile = () => {
               <Card className="h-100 border-0 shadow text-center">
                 <Card.Body className="p-4">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-tshirt fa-2x" style={{ color: "#001659" }}></i>
+                    <i className="fas fa-leaf fa-2x" style={{ color: "#001659" }}></i>
                   </div>
-                  <h4 className="fw-bold">Finished Garments</h4>
+                  <h4 className="fw-bold">Natural Fibers</h4>
                   <p className="text-muted">
-                    Ready-to-wear clothing including shirts, dresses, trousers, and outerwear 
-                    manufactured to international quality standards and fashion trends. We offer 
-                    both contemporary and traditional designs to meet diverse market needs.
+                    Premium natural textiles including cotton, linen, silk, wool, and jute.
+                    Sourced from ethical producers with sustainable practices and certified quality standards.
                   </p>
                 </Card.Body>
               </Card>
@@ -331,13 +437,12 @@ export const Textile = () => {
               <Card className="h-100 border-0 shadow text-center">
                 <Card.Body className="p-4">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-cut fa-2x" style={{ color: "#001659" }}></i>
+                    <i className="fas fa-cogs fa-2x" style={{ color: "#001659" }}></i>
                   </div>
-                  <h4 className="fw-bold">Fabrics & Textiles</h4>
+                  <h4 className="fw-bold">Synthetic Fibers</h4>
                   <p className="text-muted">
-                    Premium quality fabrics including cotton, silk, wool, linen, and synthetic 
-                    materials for fashion designers, manufacturers, and textile businesses. 
-                    We source from certified mills ensuring ethical and sustainable production.
+                    High-performance synthetic materials including polyester, nylon, acrylic, and rayon.
+                    Engineered for specific applications with consistent quality and durability.
                   </p>
                 </Card.Body>
               </Card>
@@ -346,13 +451,12 @@ export const Textile = () => {
               <Card className="h-100 border-0 shadow text-center">
                 <Card.Body className="p-4">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-shipping-fast fa-2x" style={{ color: "#001659" }}></i>
+                    <i className="fas fa-blender fa-2x" style={{ color: "#001659" }}></i>
                   </div>
-                  <h4 className="fw-bold">Global Logistics</h4>
+                  <h4 className="fw-bold">Blended Fabrics</h4>
                   <p className="text-muted">
-                    Efficient supply chain management and international shipping solutions 
-                    to ensure timely delivery of textile products to markets worldwide. 
-                    Our logistics network spans across continents with reliable partners.
+                    Innovative fabric blends that combine the best properties of different fibers.
+                    Custom blend ratios available to meet specific performance requirements.
                   </p>
                 </Card.Body>
               </Card>
