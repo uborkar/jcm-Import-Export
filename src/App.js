@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 // Import components
 import Head from "./components/common/Head";
 import Spinner from "./components/common/Spinner";
@@ -138,7 +140,7 @@ function App() {
         <Topbar />
         <Header />
         <SearchModal />
-
+        <SpeedInsights />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
