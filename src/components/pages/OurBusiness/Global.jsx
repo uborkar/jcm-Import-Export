@@ -7,8 +7,8 @@ import marketResearchImage from "../../../assets/img/Hero-3.jpg"; // You'll need
 export const GlobalMarket = () => {
   return (
     <>
-        <style>
-              {`
+      <style>
+        {`
                 /* Coming Soon Overlay Styles */
                 .coming-soon-overlay {
                   position: fixed;
@@ -179,60 +179,71 @@ export const GlobalMarket = () => {
                   transform: translateY(-3px);
                 }
               `}
-            </style>
-      
-            {/* Coming Soon Overlay */}
-            <div className="coming-soon-overlay">
-              <div className="coming-soon-content">
-                <div className="coming-soon-badge">Coming Soon</div>
-                <h2>Global Market Entry Support</h2>
-                <p>We're preparing something amazing for you. This section will be available soon!</p>
-                
-                {/* Progress Bar */}
-                <div className="progress-container">
-                  <div className="progress">
-                    <div className="progress-bar"></div>
-                  </div>
-                </div>
-      
-                {/* Countdown Timer */}
-                <div className="countdown-timer">
-                  <div className="countdown-item">
-                    <span className="countdown-number">15</span>
-                    <span className="countdown-label">Days</span>
-                  </div>
-                  <div className="countdown-item">
-                    <span className="countdown-number">08</span>
-                    <span className="countdown-label">Hours</span>
-                  </div>
-                  <div className="countdown-item">
-                    <span className="countdown-number">45</span>
-                    <span className="countdown-label">Minutes</span>
-                  </div>
-                </div>
-      
-                {/* Contact Button */}
-                <Link to="/contact" className="coming-soon-btn mt-4">
-                  Contact Us
-                </Link>
-      
-                {/* Social Icons */}
-                <div className="social-icons">
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
+      </style>
+
+      {/* Coming Soon Overlay */}
+      <div className="coming-soon-overlay">
+        <div className="coming-soon-content">
+          <div className="coming-soon-badge">Coming Soon</div>
+          <h2>Global Market Entry Support</h2>
+          <p>
+            We're preparing something amazing for you. This section will be
+            available soon!
+          </p>
+
+          {/* Progress Bar */}
+          <div className="progress-container">
+            <div className="progress">
+              <div className="progress-bar"></div>
             </div>
+          </div>
+
+          {/* Countdown Timer */}
+          <div className="countdown-timer">
+            <div className="countdown-item">
+              <span className="countdown-number">15</span>
+              <span className="countdown-label">Days</span>
+            </div>
+            <div className="countdown-item">
+              <span className="countdown-number">08</span>
+              <span className="countdown-label">Hours</span>
+            </div>
+            <div className="countdown-item">
+              <span className="countdown-number">45</span>
+              <span className="countdown-label">Minutes</span>
+            </div>
+          </div>
+
+          {/* Back to our business page */}
+          <div className="d-flex justify-content-center gap-2 mt-4">
+            {/* Back to our business page */}
+            <Link to="/our-business" className="coming-soon-btn">
+              Our Business
+            </Link>
+
+            {/* Contact Button */}
+            <Link to="/contact" className="coming-soon-btn">
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Social Icons */}
+          <div className="social-icons">
+            <a href="#" className="social-icon">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Hero Section - Matching the provided structure */}
       <div className="et_pb_section et_pb_with_background et_section_regular">
@@ -243,12 +254,17 @@ export const GlobalMarket = () => {
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
-                      <h1 style={{ color: "#001659" }}>Global Market Entry Support</h1>
+                      <h1 style={{ color: "#001659" }}>
+                        Global Market Entry Support
+                      </h1>
                       <p>
-                        JCM Import Export provides comprehensive support services for businesses looking 
-                        to enter new international markets. With our extensive experience in global trade, 
-                        we offer expertise in market research, regulatory compliance, logistics, and market 
-                        strategy development to help your business expand successfully into new territories.
+                        JCM Import Export provides comprehensive support
+                        services for businesses looking to enter new
+                        international markets. With our extensive experience in
+                        global trade, we offer expertise in market research,
+                        regulatory compliance, logistics, and market strategy
+                        development to help your business expand successfully
+                        into new territories.
                       </p>
                     </div>
                   </div>
@@ -262,7 +278,11 @@ export const GlobalMarket = () => {
                     src={globalMarketImage}
                     alt="Global Market Entry Support"
                     className="img-fluid wp-image-7714"
-                    style={{ width: "534px", height: "450px", objectFit: "cover" }}
+                    style={{
+                      width: "534px",
+                      height: "450px",
+                      objectFit: "cover",
+                    }}
                   />
                 </span>
               </div>
@@ -272,7 +292,10 @@ export const GlobalMarket = () => {
       </div>
 
       {/* Full Width Section - Matching the provided structure */}
-      <div id="full-width" className="et_pb_section et_pb_with_background et_section_regular">
+      <div
+        id="full-width"
+        className="et_pb_section et_pb_with_background et_section_regular"
+      >
         <Container>
           <Row className="et_pb_row">
             <Col lg={6} className="et_pb_column">
@@ -282,7 +305,11 @@ export const GlobalMarket = () => {
                     src={marketResearchImage}
                     alt="Market Research Services"
                     className="img-fluid wp-image-7715"
-                    style={{ width: "534px", height: "408px", objectFit: "cover" }}
+                    style={{
+                      width: "534px",
+                      height: "408px",
+                      objectFit: "cover",
+                    }}
                   />
                 </span>
               </div>
@@ -292,14 +319,19 @@ export const GlobalMarket = () => {
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
-                      <h2 style={{ color: "#001659" }}>Comprehensive Market Analysis</h2>
+                      <h2 style={{ color: "#001659" }}>
+                        Comprehensive Market Analysis
+                      </h2>
                       <p>
-                        Our market entry services include detailed analysis of target markets, competition 
-                        assessment, consumer behavior studies, and regulatory landscape mapping. We provide 
-                        customized strategies for different regions including Asia, Europe, Middle East, 
-                        Africa, and the Americas. Our team helps you navigate cultural differences, legal 
-                        requirements, and business practices to ensure successful market penetration and 
-                        sustainable growth in new territories.
+                        Our market entry services include detailed analysis of
+                        target markets, competition assessment, consumer
+                        behavior studies, and regulatory landscape mapping. We
+                        provide customized strategies for different regions
+                        including Asia, Europe, Middle East, Africa, and the
+                        Americas. Our team helps you navigate cultural
+                        differences, legal requirements, and business practices
+                        to ensure successful market penetration and sustainable
+                        growth in new territories.
                       </p>
                     </div>
                   </div>
@@ -340,12 +372,16 @@ export const GlobalMarket = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-chart-line fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-chart-line fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Market Research</h4>
                   <p>
-                    Comprehensive analysis of target markets, competition landscape, consumer behavior, 
-                        and growth opportunities to inform your expansion strategy.
+                    Comprehensive analysis of target markets, competition
+                    landscape, consumer behavior, and growth opportunities to
+                    inform your expansion strategy.
                   </p>
                 </div>
               </div>
@@ -354,12 +390,16 @@ export const GlobalMarket = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-file-contract fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-file-contract fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Regulatory Compliance</h4>
                   <p>
-                    Guidance on international trade regulations, certifications, documentation requirements, 
-                        and compliance with local laws in target markets.
+                    Guidance on international trade regulations, certifications,
+                    documentation requirements, and compliance with local laws
+                    in target markets.
                   </p>
                 </div>
               </div>
@@ -368,12 +408,16 @@ export const GlobalMarket = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-handshake fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-handshake fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Partnership Development</h4>
                   <p>
-                    Connecting businesses with reliable partners, distributors, agents, and local 
-                        representatives in target markets to facilitate successful market entry.
+                    Connecting businesses with reliable partners, distributors,
+                    agents, and local representatives in target markets to
+                    facilitate successful market entry.
                   </p>
                 </div>
               </div>

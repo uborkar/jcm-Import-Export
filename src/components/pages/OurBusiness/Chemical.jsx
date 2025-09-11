@@ -186,8 +186,11 @@ export const Chemical = () => {
         <div className="coming-soon-content">
           <div className="coming-soon-badge">Coming Soon</div>
           <h2>Chemicals & Raw Materials Section</h2>
-          <p>We're preparing something amazing for you. This section will be available soon!</p>
-          
+          <p>
+            We're preparing something amazing for you. This section will be
+            available soon!
+          </p>
+
           {/* Progress Bar */}
           <div className="progress-container">
             <div className="progress">
@@ -211,10 +214,18 @@ export const Chemical = () => {
             </div>
           </div>
 
-          {/* Contact Button */}
-          <Link to="/contact" className="coming-soon-btn mt-4">
-            Contact Us
-          </Link>
+          {/* Back to our business page */}
+          <div className="d-flex justify-content-center gap-2 mt-4">
+            {/* Back to our business page */}
+            <Link to="/our-business" className="coming-soon-btn">
+              Our Business
+            </Link>
+
+            {/* Contact Button */}
+            <Link to="/contact" className="coming-soon-btn">
+              Contact Us
+            </Link>
+          </div>
 
           {/* Social Icons */}
           <div className="social-icons">
@@ -243,13 +254,18 @@ export const Chemical = () => {
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
                     <div className="inner-left">
-                      <h1 style={{ color: "#001659" }}>Chemicals & Raw Materials</h1>
+                      <h1 style={{ color: "#001659" }}>
+                        Chemicals & Raw Materials
+                      </h1>
                       <p>
-                        JCM Import Export is a leading supplier of high-purity chemicals and raw materials 
-                        for various industries including pharmaceuticals, manufacturing, agriculture, and 
-                        research applications. We provide industrial chemicals, pharmaceutical-grade materials, 
-                        agricultural chemicals, and specialty raw materials from trusted global manufacturers 
-                        with strict quality assurance protocols.
+                        JCM Import Export is a leading supplier of high-purity
+                        chemicals and raw materials for various industries
+                        including pharmaceuticals, manufacturing, agriculture,
+                        and research applications. We provide industrial
+                        chemicals, pharmaceutical-grade materials, agricultural
+                        chemicals, and specialty raw materials from trusted
+                        global manufacturers with strict quality assurance
+                        protocols.
                       </p>
                     </div>
                   </div>
@@ -263,7 +279,11 @@ export const Chemical = () => {
                     src={img1}
                     alt="Chemicals and Raw Materials"
                     className="img-fluid wp-image-7714"
-                    style={{ width: "534px", height: "450px", objectFit: "cover" }}
+                    style={{
+                      width: "534px",
+                      height: "450px",
+                      objectFit: "cover",
+                    }}
                   />
                 </span>
               </div>
@@ -273,7 +293,10 @@ export const Chemical = () => {
       </div>
 
       {/* Full Width Section */}
-      <div id="full-width" className="et_pb_section et_pb_with_background et_section_regular blurred-content">
+      <div
+        id="full-width"
+        className="et_pb_section et_pb_with_background et_section_regular blurred-content"
+      >
         <Container>
           <Row className="et_pb_row">
             <Col lg={6} className="et_pb_column">
@@ -283,7 +306,11 @@ export const Chemical = () => {
                     src={chemicalImage}
                     alt="Chemical Products"
                     className="img-fluid wp-image-7715"
-                    style={{ width: "534px", height: "408px", objectFit: "cover" }}
+                    style={{
+                      width: "534px",
+                      height: "408px",
+                      objectFit: "cover",
+                    }}
                   />
                 </span>
               </div>
@@ -295,11 +322,15 @@ export const Chemical = () => {
                     <div className="inner-left">
                       <h2 style={{ color: "#001659" }}>Bulk Chemical Supply</h2>
                       <p>
-                        Our bulk chemical products are available for industrial and commercial applications 
-                        with various packaging options including drums, totes, and custom containers. We supply 
-                        to manufacturers, pharmaceutical companies, agricultural businesses, and research 
-                        institutions worldwide. Our logistics network ensures safe handling and timely delivery 
-                        of chemical products with proper documentation and compliance with international regulations.
+                        Our bulk chemical products are available for industrial
+                        and commercial applications with various packaging
+                        options including drums, totes, and custom containers.
+                        We supply to manufacturers, pharmaceutical companies,
+                        agricultural businesses, and research institutions
+                        worldwide. Our logistics network ensures safe handling
+                        and timely delivery of chemical products with proper
+                        documentation and compliance with international
+                        regulations.
                       </p>
                     </div>
                   </div>
@@ -327,12 +358,16 @@ export const Chemical = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-flask fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-flask fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Industrial Chemicals</h4>
                   <p>
-                    High-quality chemicals for manufacturing, processing, water treatment, and various 
-                    industrial applications with consistent purity and reliability.
+                    High-quality chemicals for manufacturing, processing, water
+                    treatment, and various industrial applications with
+                    consistent purity and reliability.
                   </p>
                 </div>
               </div>
@@ -341,12 +376,16 @@ export const Chemical = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-pills fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-pills fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Pharmaceutical Grade</h4>
                   <p>
-                    USP, BP, and EP grade chemicals, APIs, excipients, and raw materials for pharmaceutical, 
-                    nutraceutical, and healthcare industries.
+                    USP, BP, and EP grade chemicals, APIs, excipients, and raw
+                    materials for pharmaceutical, nutraceutical, and healthcare
+                    industries.
                   </p>
                 </div>
               </div>
@@ -355,12 +394,16 @@ export const Chemical = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-leaf fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-leaf fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Agricultural Chemicals</h4>
                   <p>
-                    Fertilizers, pesticides, herbicides, and other agro-chemicals to support modern 
-                    farming practices and enhance agricultural productivity.
+                    Fertilizers, pesticides, herbicides, and other
+                    agro-chemicals to support modern farming practices and
+                    enhance agricultural productivity.
                   </p>
                 </div>
               </div>

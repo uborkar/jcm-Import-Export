@@ -8,8 +8,8 @@ import industrialImage from "../../../assets/img/machinepart.jpg"; // You'll nee
 export const Midc = () => {
   return (
     <>
-       <style>
-              {`
+      <style>
+        {`
                 /* Coming Soon Overlay Styles */
                 .coming-soon-overlay {
                   position: fixed;
@@ -180,61 +180,71 @@ export const Midc = () => {
                   transform: translateY(-3px);
                 }
               `}
-            </style>
-      
-            {/* Coming Soon Overlay */}
-            <div className="coming-soon-overlay">
-              <div className="coming-soon-content">
-                <div className="coming-soon-badge">Coming Soon</div>
-                <h2>Industrial Goods</h2>
-                <p>We're preparing something amazing for you. This section will be available soon!</p>
-                
-                {/* Progress Bar */}
-                <div className="progress-container">
-                  <div className="progress">
-                    <div className="progress-bar"></div>
-                  </div>
-                </div>
-      
-                {/* Countdown Timer */}
-                <div className="countdown-timer">
-                  <div className="countdown-item">
-                    <span className="countdown-number">15</span>
-                    <span className="countdown-label">Days</span>
-                  </div>
-                  <div className="countdown-item">
-                    <span className="countdown-number">08</span>
-                    <span className="countdown-label">Hours</span>
-                  </div>
-                  <div className="countdown-item">
-                    <span className="countdown-number">45</span>
-                    <span className="countdown-label">Minutes</span>
-                  </div>
-                </div>
-      
-                {/* Contact Button */}
-                <Link to="/contact" className="coming-soon-btn mt-4">
-                  Contact Us
-                </Link>
-      
-                {/* Social Icons */}
-                <div className="social-icons">
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
+      </style>
+
+      {/* Coming Soon Overlay */}
+      <div className="coming-soon-overlay">
+        <div className="coming-soon-content">
+          <div className="coming-soon-badge">Coming Soon</div>
+          <h2>Industrial Goods</h2>
+          <p>
+            We're preparing something amazing for you. This section will be
+            available soon!
+          </p>
+
+          {/* Progress Bar */}
+          <div className="progress-container">
+            <div className="progress">
+              <div className="progress-bar"></div>
             </div>
-      
+          </div>
+
+          {/* Countdown Timer */}
+          <div className="countdown-timer">
+            <div className="countdown-item">
+              <span className="countdown-number">15</span>
+              <span className="countdown-label">Days</span>
+            </div>
+            <div className="countdown-item">
+              <span className="countdown-number">08</span>
+              <span className="countdown-label">Hours</span>
+            </div>
+            <div className="countdown-item">
+              <span className="countdown-number">45</span>
+              <span className="countdown-label">Minutes</span>
+            </div>
+          </div>
+
+          {/* Back to our business page */}
+          <div className="d-flex justify-content-center gap-2 mt-4">
+            {/* Back to our business page */}
+            <Link to="/our-business" className="coming-soon-btn">
+              Our Business
+            </Link>
+
+            {/* Contact Button */}
+            <Link to="/contact" className="coming-soon-btn">
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Social Icons */}
+          <div className="social-icons">
+            <a href="#" className="social-icon">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Hero Section - Matching the provided structure */}
       <div className="et_pb_section et_pb_with_background et_section_regular">
@@ -247,11 +257,13 @@ export const Midc = () => {
                     <div className="inner-left">
                       <h1 style={{ color: "#001659" }}>Industrial Goods</h1>
                       <p>
-                        JCM Import Export supplies high-quality industrial goods and equipment for various 
-                        sectors including manufacturing, construction, infrastructure development, and 
-                        industrial maintenance. We provide machinery, tools, components, and safety equipment 
-                        from trusted manufacturers worldwide, ensuring reliability and performance for 
-                        industrial applications.
+                        JCM Import Export supplies high-quality industrial goods
+                        and equipment for various sectors including
+                        manufacturing, construction, infrastructure development,
+                        and industrial maintenance. We provide machinery, tools,
+                        components, and safety equipment from trusted
+                        manufacturers worldwide, ensuring reliability and
+                        performance for industrial applications.
                       </p>
                     </div>
                   </div>
@@ -265,7 +277,11 @@ export const Midc = () => {
                     src={img1}
                     alt="Industrial Goods"
                     className="img-fluid wp-image-7714"
-                    style={{ width: "534px", height: "450px", objectFit: "cover" }}
+                    style={{
+                      width: "534px",
+                      height: "450px",
+                      objectFit: "cover",
+                    }}
                   />
                 </span>
               </div>
@@ -275,7 +291,10 @@ export const Midc = () => {
       </div>
 
       {/* Full Width Section - Matching the provided structure */}
-      <div id="full-width" className="et_pb_section et_pb_with_background et_section_regular">
+      <div
+        id="full-width"
+        className="et_pb_section et_pb_with_background et_section_regular"
+      >
         <Container>
           <Row className="et_pb_row">
             <Col lg={6} className="et_pb_column">
@@ -285,7 +304,11 @@ export const Midc = () => {
                     src={industrialImage}
                     alt="Industrial Products"
                     className="img-fluid wp-image-7715"
-                    style={{ width: "534px", height: "408px", objectFit: "cover" }}
+                    style={{
+                      width: "534px",
+                      height: "408px",
+                      objectFit: "cover",
+                    }}
                   />
                 </span>
               </div>
@@ -297,11 +320,14 @@ export const Midc = () => {
                     <div className="inner-left">
                       <h2 style={{ color: "#001659" }}>Industrial Solutions</h2>
                       <p>
-                        Our industrial goods range includes heavy machinery, precision tools, industrial 
-                        components, and safety equipment for various applications. We cater to manufacturing 
-                        plants, construction companies, infrastructure projects, and maintenance operations. 
-                        Our products are sourced from reputable manufacturers and undergo strict quality 
-                        checks to ensure they meet industrial standards and performance requirements for 
+                        Our industrial goods range includes heavy machinery,
+                        precision tools, industrial components, and safety
+                        equipment for various applications. We cater to
+                        manufacturing plants, construction companies,
+                        infrastructure projects, and maintenance operations. Our
+                        products are sourced from reputable manufacturers and
+                        undergo strict quality checks to ensure they meet
+                        industrial standards and performance requirements for
                         demanding environments.
                       </p>
                     </div>
@@ -343,12 +369,16 @@ export const Midc = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-cogs fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-cogs fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Machinery & Equipment</h4>
                   <p>
-                    High-quality industrial machinery, manufacturing equipment, and processing systems 
-                    for various industrial applications and production needs.
+                    High-quality industrial machinery, manufacturing equipment,
+                    and processing systems for various industrial applications
+                    and production needs.
                   </p>
                 </div>
               </div>
@@ -357,12 +387,16 @@ export const Midc = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-tools fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-tools fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Tools & Components</h4>
                   <p>
-                    Precision tools, industrial components, spare parts, and maintenance equipment 
-                    for manufacturing, construction, and industrial operations.
+                    Precision tools, industrial components, spare parts, and
+                    maintenance equipment for manufacturing, construction, and
+                    industrial operations.
                   </p>
                 </div>
               </div>
@@ -371,12 +405,16 @@ export const Midc = () => {
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
-                    <i className="fas fa-hard-hat fa-2x" style={{ color: "#001659" }}></i>
+                    <i
+                      className="fas fa-hard-hat fa-2x"
+                      style={{ color: "#001659" }}
+                    ></i>
                   </div>
                   <h4>Safety Equipment</h4>
                   <p>
-                    Certified safety equipment, protective gear, and industrial safety solutions 
-                    to ensure workplace safety and compliance with safety regulations.
+                    Certified safety equipment, protective gear, and industrial
+                    safety solutions to ensure workplace safety and compliance
+                    with safety regulations.
                   </p>
                 </div>
               </div>
