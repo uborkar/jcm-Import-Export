@@ -16,22 +16,23 @@ export const FoodAgro = () => {
               <div className="et_pb_text et_pb_text_align_left et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
-                    <div className="inner-left" >
+                    <div className="inner-left">
                       <h1 style={{ color: "#001659" }}>Pulses & Grains</h1>
                       <p>
                         JCM Import Export is a leading importer and supplier of
-                        high-quality pulses and grains, offering a variety of
-                        products including Toor (Arhar), Moong, Udad, Masoor,
+                        high-quality pulses, grains, and agricultural products.
+                        We offer a diverse range of premium commodities
+                        including Soybean, Toor (Arhar), Moong, Udad, Masoor,
                         Chana, and various peas. Our products are sourced from
                         trusted suppliers worldwide and processed with modern
                         machinery to ensure the highest quality while
-                        maintaining food safety standards.
+                        maintaining stringent food safety standards.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-               <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
+              <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_module">
                 <Link
                   to="/pulsesproducts"
                   className="et_pb_button pad-sec2 et_pb_bg_layout_light"
@@ -110,7 +111,6 @@ export const FoodAgro = () => {
                   </div>
                 </div>
               </div>
-             
             </Col>
           </Row>
         </Container>
