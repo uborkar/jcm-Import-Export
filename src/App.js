@@ -39,15 +39,15 @@ import PulsesProducts from "./components/pages/OurBusiness/products/PulsesProduc
 import Textiles from "./components/pages/OurBusiness/products/Textile";
 import Textile from "./components/pages/OurBusiness/Textile";
 import Midc from "./components/pages/OurBusiness/Midc";
-import Global from "./components/pages/OurBusiness/Global";
-import Chemical from "./components/pages/OurBusiness/Chemical";
+import Global from "./components/pages/OurBusiness/Globals";
+import Chemical from "./components/pages/OurBusiness/Chemicals";
 import Logistics from "./components/pages/OurBusiness/Logistics";
 
 // Import ONLY essential CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css/animate.min.css";
 import "./assets/css/style.css";
-import BusinessSection from "./components/sections/BusinessSection";
+// import BusinessSection from "./components/sections/BusinessSection";
 
 function App() {
   const [loading, setLoading] = useState(true);

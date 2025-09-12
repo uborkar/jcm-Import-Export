@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import globalMarketImage from "../../../assets/img/Hero-2.jpg"; // You'll need to add this image
 import marketResearchImage from "../../../assets/img/Hero-3.jpg"; // You'll need to add this image
