@@ -12,7 +12,7 @@ import sauce  from "../../../../assets/img/soysauce.jpg";
 import tofu  from "../../../../assets/img/soytofu.jpg";
 import flour  from "../../../../assets/img/soyflour.jpg";
 import toorDalImage from "../../../../assets/img/Toor-re.jpg";
-import moongDalImage from "../../../../assets/img/moong.jpg";
+import moongDalImage from "../../../../assets/img/mung.jpg";
 import chanaDalImage from "../../../../assets/img/chana.jpg";
 import udadDalImage from "../../../../assets/img/urad.jpg";
 import masoorDalImage from "../../../../assets/img/masoor-re.jpg";
