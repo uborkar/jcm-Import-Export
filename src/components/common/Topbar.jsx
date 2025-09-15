@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Topbar = () => {
   // Hover handlers for inline style change
@@ -19,7 +19,9 @@ const Topbar = () => {
         <div className="col-lg-6 text-center text-lg-start mb-lg-0">
           <div className="d-flex flex-wrap align-items-center">
             <a
-              href="#"
+              href="https://maps.app.goo.gl/ynKEqvPdLsA78beD9"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#7D7D7D", textDecoration: "none" }}
               className="me-4 d-flex align-items-center"
             >
@@ -29,8 +31,9 @@ const Topbar = () => {
               ></i>
               Find A Location
             </a>
+
             <a
-              href="#"
+              href="tel:+919370936583"
               style={{ color: "#7D7D7D", textDecoration: "none" }}
               className="me-4 d-flex align-items-center"
             >
@@ -38,10 +41,11 @@ const Topbar = () => {
                 className="fas fa-phone-alt me-2"
                 style={{ color: "#ff5e15" }}
               ></i>
-              +91-9270350972
+              +91-9370936583
             </a>
+
             <a
-              href="#"
+              href="mailto:jcmimportexporthub@gmail.com?subject=Business%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20know%20more%20about..."
               style={{ color: "#7D7D7D", textDecoration: "none" }}
               className="me-0 d-flex align-items-center"
             >
@@ -62,10 +66,7 @@ const Topbar = () => {
               style={{ color: "#7D7D7D", textDecoration: "none" }}
               className="me-3 d-flex align-items-center"
             >
-              <i
-                className="fas fa-clock me-2"
-                style={{ color: "#ff5e15" }}
-              ></i>
+              <i className="fas fa-clock me-2" style={{ color: "#ff5e15" }}></i>
               Mon - Sat 8:00 - 17:30, Sunday - CLOSED
             </a>
 

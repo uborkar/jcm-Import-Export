@@ -109,16 +109,16 @@ const Footer = () => {
             <div className="footer-item d-flex flex-column">
               <h4 className="text-white mb-4">Contact Info</h4>
               <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-                <i className="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA
+                <i className="fa fa-map-marker-alt me-2"></i> Pimpri Chinchwad, Pune
               </a>
               <a href="mailto:info@example.com" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-envelope me-2"></i> info@example.com
               </a>
               <a href="mailto:support@example.com" style={{ textDecoration: "none", color: "inherit" }}>
-                <i className="fas fa-envelope me-2"></i> support@example.com
+                <i className="fas fa-envelope me-2"></i> jcmimportexporthub@gmail.com
               </a>
-              <a href="tel:+01234567890" style={{ textDecoration: "none", color: "inherit" }}>
-                <i className="fas fa-phone me-2"></i> +012 345 67890
+              <a href="tel:+91-9370936583" style={{ textDecoration: "none", color: "inherit" }}>
+                <i className="fas fa-phone me-2"></i> +91 9370936583
               </a>
               <a href="tel:+01234567891" className="mb-3" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-print me-2"></i> +012 345 67891
