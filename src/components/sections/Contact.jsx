@@ -52,7 +52,7 @@ const Contact = () => {
                     <label htmlFor="email">Your Email</label>
                   </div>
                 </div>
-                <div className="col-lg-12 col-xl-6">
+                <div className="col-lg-12 ">
                   <div className="form-floating border border-secondary">
                     <input
                       type="phone"
@@ -61,17 +61,6 @@ const Contact = () => {
                       placeholder="Phone"
                     />
                     <label htmlFor="phone">Your Phone</label>
-                  </div>
-                </div>
-                <div className="col-lg-12 col-xl-6">
-                  <div className="form-floating border border-secondary">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="project"
-                      placeholder="Project"
-                    />
-                    <label htmlFor="project">Your Project</label>
                   </div>
                 </div>
                 <div className="col-12">

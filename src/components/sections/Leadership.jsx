@@ -16,24 +16,24 @@ const Leadership = () => {
       title: "Founder and CEO",
       fullDescription: [
         "Mr. Siddharam Maindargi is the visionary Founder and CEO of JCM Group, providing the strategic direction and driving force behind the company's success. With a distinguished career spanning over 25 years, he brings a wealth of expertise in commodities, logistics, and international business.",
-        "His extensive domestic and global exposure has been instrumental in shaping JCM's vision and mission. A true entrepreneur at heart, Mr. Maindargi combines deep industry knowledge with an innovative mindset, focusing on sustainable global growth and building a resilient business model for the future."
-      ]
+        "His extensive domestic and global exposure has been instrumental in shaping JCM's vision and mission. A true entrepreneur at heart, Mr. Maindargi combines deep industry knowledge with an innovative mindset, focusing on sustainable global growth and building a resilient business model for the future.",
+      ],
     },
     leader2: {
       name: "Mr. Dhanaji Thore",
       title: "Head – Marketing & Finance",
       fullDescription: [
         "Mr. Dhanaji Thore is a dynamic leader who heads the integrated Marketing and Finance portfolio for the JCM Group. An MBA graduate from a premier institute, he brings over 12 years of rich and diverse experience across both domains.",
-        "His unique expertise allows for a synergistic approach to business strategy, seamlessly aligning market-facing initiatives with robust financial planning. Dhanaji is passionately driven by a vision for global expansion, focusing on establishing JCM as a trusted international brand."
-      ]
+        "His unique expertise allows for a synergistic approach to business strategy, seamlessly aligning market-facing initiatives with robust financial planning. Dhanaji is passionately driven by a vision for global expansion, focusing on establishing JCM as a trusted international brand.",
+      ],
     },
     leader3: {
       name: "Mrs. Shruti Zunja",
       title: "Head -Exim & CS",
       fullDescription: [
         "Shruti Zunja leads the Exim and Company Secretary Department at JCM Group. With a dynamic personality and expertise in handling EXIM operations and corporate portfolios, she drives excellence in every aspect of her work.",
-        "She envisions making JCM 100% compliant with a zero-tolerance approach, ensuring the highest standards of trust and transparency for all stakeholders and customers."
-      ]
+        "She envisions making JCM 100% compliant with a zero-tolerance approach, ensuring the highest standards of trust and transparency for all stakeholders and customers.",
+      ],
     },
   };
 
@@ -55,13 +55,14 @@ const Leadership = () => {
           <div className="et-l et-l--post">
             <div className="et_builder_inner_content et_pb_gutters3">
               {/* Banner Section */}
+              {/* Banner Section */}
               <div
                 className="container-fluid py-5"
                 style={{ backgroundColor: "#f8f9fa" }}
               >
                 <div className="container">
-                  <div className="row align-items-center">
-                    <div className="col-lg-7">
+                  <div className="row justify-content-center">
+                    <div className="col-lg-10 col-xl-8 text-center">
                       <div className="inner-left">
                         <h1
                           className="display-4 fw-bold mb-4"
@@ -79,18 +80,6 @@ const Leadership = () => {
                         </p>
                       </div>
                     </div>
-                    {/* <div className="col-lg-5">
-                      <img
-                        src={leadershipBanner}
-                        alt="Leadership Banner"
-                        className="img-fluid rounded"
-                        style={{ 
-                          maxHeight: "500px",
-                          width: "100%",
-                          objectFit: "cover"
-                        }}
-                      />
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -102,7 +91,10 @@ const Leadership = () => {
                     {/* Leader 1 */}
                     <div className="col-md-6 col-lg-4 d-flex">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
+                        <div
+                          className="team-member-image"
+                          style={{ overflow: "hidden", height: "380px" }}
+                        >
                           <img
                             src={img1}
                             alt="Siddharam Maindargi"
@@ -156,7 +148,10 @@ const Leadership = () => {
                     {/* Leader 2 */}
                     <div className="col-md-6 col-lg-4 d-flex">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
+                        <div
+                          className="team-member-image"
+                          style={{ overflow: "hidden", height: "380px" }}
+                        >
                           <img
                             src={img2}
                             alt="Dhanaji Thore"
@@ -208,7 +203,10 @@ const Leadership = () => {
                     {/* Leader 3 */}
                     <div className="col-md-6 col-lg-4 d-flex">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
+                        <div
+                          className="team-member-image"
+                          style={{ overflow: "hidden", height: "380px" }}
+                        >
                           <img
                             src={img3}
                             alt="Shruti Zunja"
@@ -288,11 +286,13 @@ const Leadership = () => {
                 <h6 style={{ color: "#FF5E15" }}>
                   {leaderDetails[showModal].title}
                 </h6>
-                {leaderDetails[showModal].fullDescription.map((paragraph, index) => (
-                  <p key={index} className={index > 0 ? "mt-3" : ""}>
-                    {paragraph}
-                  </p>
-                ))}
+                {leaderDetails[showModal].fullDescription.map(
+                  (paragraph, index) => (
+                    <p key={index} className={index > 0 ? "mt-3" : ""}>
+                      {paragraph}
+                    </p>
+                  )
+                )}
               </div>
               <div className="modal-footer">
                 <button
