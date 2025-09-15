@@ -79,7 +79,7 @@ const Leadership = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    {/* <div className="col-lg-5">
                       <img
                         src={leadershipBanner}
                         alt="Leadership Banner"
@@ -90,7 +90,7 @@ const Leadership = () => {
                           objectFit: "cover"
                         }}
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

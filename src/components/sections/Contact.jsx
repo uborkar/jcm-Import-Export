@@ -130,10 +130,10 @@ const Contact = () => {
                 style={{ color: "#FF5E15", flexShrink: 0 }}
               ></i>
               <div>
-                <h4>Address 1</h4>
+                <h4>Office Address</h4>
                 <p className="mb-0">
                   Flat No-A 508 S R No.34 Vardhaman Aangan, Kalewadi Road Tambe
-                  school Kalewadi Pimpri Chinchwad, PUNE, MAHARASHTRA, 411017
+                  School Kalewadi Pimpri Chinchwad, PUNE, MAHARASHTRA, 411017
                 </p>
               </div>
             </div>
@@ -145,9 +145,9 @@ const Contact = () => {
                 style={{ color: "#FF5E15", flexShrink: 0 }}
               ></i>
               <div>
-                <h4>Address 2</h4>
+                <h4>Office Address</h4>
                 <p className="mb-0">
-                  A-602,Saptshree Heights Near TMC mini sports club, Dhokali,
+                  A-602,Saptshree Heights Near TMC Mini Sports Club, Dhokali,
                   Naka, Thane, Maharashtra 400607
                 </p>
               </div>
