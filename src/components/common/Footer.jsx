@@ -37,7 +37,7 @@ const Footer = () => {
       data-wow-delay="0.2s"
     >
       <div className="container py-5">
-        <div className="row g-5">
+        <div className="row g-4">
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <div className="footer-item">
