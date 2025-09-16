@@ -32,6 +32,7 @@ import TestimonialPage from "./components/pages/TestimonialPage";
 import FeaturePage from "./components/pages/FeaturePage";
 import ContactPage from "./components/pages/ContactPage";
 import NotFound from "./components/pages/NotFound";
+import ThankYou from "./components/pages/Thankyou";
 
 // Import OurBusiness pages - FIXED IMPORTS
 import AgroFood from "./components/pages/OurBusiness/Agrofood";
@@ -176,6 +177,7 @@ function App() {
           <Route path="/testimonials" element={<TestimonialPage />} />
           <Route path="/features" element={<FeaturePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
