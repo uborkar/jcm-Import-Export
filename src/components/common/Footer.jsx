@@ -111,18 +111,18 @@ const Footer = () => {
               <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fa fa-map-marker-alt me-2"></i> Pimpri Chinchwad, Pune
               </a>
-              <a href="mailto:info@example.com" style={{ textDecoration: "none", color: "inherit" }}>
+              {/* <a href="mailto:info@example.com" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-envelope me-2"></i> info@example.com
-              </a>
+              </a> */}
               <a href="mailto:support@example.com" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-envelope me-2"></i> jcmimportexporthub@gmail.com
               </a>
-              <a href="tel:+91-9370936583" style={{ textDecoration: "none", color: "inherit" }}>
+              <a href="tel:+91-9370936583" style={{ textDecoration: "none", color: "inherit ", marginBottom: "15px" }}>
                 <i className="fas fa-phone me-2"></i> +91 9370936583
               </a>
-              <a href="tel:+01234567891" className="mb-3" style={{ textDecoration: "none", color: "inherit" }}>
+              {/* <a href="tel:+01234567891" className="mb-3" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-print me-2"></i> +012 345 67891
-              </a>
+              </a> */}
               <div className="footer-btn d-flex align-items-center">
                 {[
                   { icon: "facebook-f", url: "https://facebook.com" },
