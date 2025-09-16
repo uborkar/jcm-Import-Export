@@ -253,7 +253,7 @@ const Contact = () => {
                 style={{ color: "#FF5E15", flexShrink: 0 }}
               ></i>
               <div>
-                <h4>Office Address</h4>
+                <h4>Head Office</h4>
                 <p className="mb-0">
                   Flat No-A 508 S R No.34 Vardhaman Aangan, Kalewadi Road Tambe
                   School Kalewadi Pimpri Chinchwad, PUNE, MAHARASHTRA, 411017
@@ -268,7 +268,7 @@ const Contact = () => {
                 style={{ color: "#FF5E15", flexShrink: 0 }}
               ></i>
               <div>
-                <h4>Office Address</h4>
+                <h4>Sales Office </h4>
                 <p className="mb-0">
                   A-602,Saptshree Heights Near TMC Mini Sports Club, Dhokali,
                   Naka, Thane, Maharashtra 400607

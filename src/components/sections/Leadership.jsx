@@ -4,7 +4,7 @@ import img1 from "../../assets/img/ceo-e.jpg";
 import img2 from "../../assets/img/head1-e.jpg";
 import img3 from "../../assets/img/head2-e.jpg";
 // import img4 from '../../assets/img/MD.jpg';
-import leadershipBanner from "../../assets/img/leadership-banner.jpg";
+// import leadershipBanner from "../../assets/img/leadership-banner.jpg";
 
 const Leadership = () => {
   const [hoveredBtn, setHoveredBtn] = useState(null);
@@ -23,7 +23,7 @@ const Leadership = () => {
       name: "Mr. Dhanaji Thore",
       title: "Head – Marketing & Finance",
       fullDescription: [
-        "Mr. Dhanaji Thore is a dynamic leader who heads the integrated Marketing and Finance portfolio for the JCM Group. An MBA graduate from a premier institute, he brings over 12 years of rich and diverse experience across both domains.",
+        "Mr. Dhanaji Thore is a dynamic leader who heads the integrated Marketing and Finance portfolio for the JCM Group. An MBA from a premier institute, he brings over 12 years of rich and diverse experience across both domains.",
         "His unique expertise allows for a synergistic approach to business strategy, seamlessly aligning market-facing initiatives with robust financial planning. Dhanaji is passionately driven by a vision for global expansion, focusing on establishing JCM as a trusted international brand.",
       ],
     },
@@ -176,7 +176,7 @@ const Leadership = () => {
                             <p className="text-start">
                               Mr. Dhanaji Thore is a dynamic leader who heads
                               the integrated Marketing and Finance portfolio for
-                              the JCM Group. An MBA graduate from a premier
+                              the JCM Group. An MBA from a premier
                               institute, he brings over 12 years of rich and
                               diverse experience across both domains...
                             </p>
