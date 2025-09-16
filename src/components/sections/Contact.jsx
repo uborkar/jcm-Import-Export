@@ -82,7 +82,7 @@ const Contact = () => {
               </p>
             </div>
             <form
-              action="https://formsubmit.co/uborkar100@gmail.com"
+              action="https://formsubmit.co/jcmimportexporthub@gmail.com"
               method="POST"
               onSubmit={handleSubmit}
               className="needs-validation"

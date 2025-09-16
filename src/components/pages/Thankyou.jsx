@@ -45,7 +45,7 @@ const ThankYou = () => {
                       e.target.style.transform = "translateY(0)";
                     }}
                   >
-                    <i className="fas fa-home me-2"></i>Back to Home
+                   Back to Home
                   </Link>
                   <Link 
                     to="/contact" 
@@ -69,7 +69,7 @@ const ThankYou = () => {
                       e.target.style.transform = "translateY(0)";
                     }}
                   >
-                    <i className="fas fa-envelope me-2"></i>Send Another Message
+                    Send Another Message
                   </Link>
                 </div>
                 <div className="alert alert-info mt-4 border-0 rounded-0" style={{ backgroundColor: "#e8f4ff" }}>
