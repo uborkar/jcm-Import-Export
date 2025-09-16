@@ -4,10 +4,10 @@ import './Legacy.css';
 
 // Import available images
 import jcmLegacyLogo from '../../assets/img/jcm-legacy.jpg';
-import inheritValues from '../../assets/img/founder.jpg';
+import inheritValues from '../../assets/img/ceo-e.jpg';
 import thePassion from '../../assets/img/agro-veg.jpg';
 import readyOpportunities from '../../assets/img/project-3.jpg';
-import uniqueStyle from '../../assets/img/founder.jpg';
+import uniqueStyle from '../../assets/img/ceo-e.jpg';
 import failureSuccess from '../../assets/img/leadership-banner.jpg';
 import doitLearn from '../../assets/img/food-agro.jpg';
 
