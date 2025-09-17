@@ -67,7 +67,7 @@ const Topbar = () => {
               className="me-3 d-flex align-items-center"
             >
               <i className="fas fa-clock me-2" style={{ color: "#ff5e15" }}></i>
-              Mon - Sat 8:00 - 17:30, Sunday - CLOSED
+              Mon - Sat 8:00 - 7:30, Sunday - CLOSED
             </a>
 
             {/* Social Icons with hover */}
@@ -88,8 +88,11 @@ const Topbar = () => {
                 onMouseLeave={handleMouseLeave}
               ></i>
             </a>
-            {/* <a
-              href="#"
+            {/* WhatsApp Icon with hover + default message */}
+            <a
+              href="https://wa.me/919370936583?text=Hi%2C%20I%27m%20interested%20in%20your%20services"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-square border border-white me-3 d-flex align-items-center justify-content-center"
               style={{
                 backgroundColor: "transparent",
@@ -99,12 +102,13 @@ const Topbar = () => {
               }}
             >
               <i
-                className="fab fa-twitter"
+                className="fab fa-whatsapp"
                 style={{ color: "white" }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               ></i>
-            </a> */}
+            </a>
+
             <a
               href="https://www.instagram.com/jcmimportexporthub/"
               className="btn btn-square border border-white me-3 d-flex align-items-center justify-content-center"

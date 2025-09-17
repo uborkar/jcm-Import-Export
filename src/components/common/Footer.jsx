@@ -43,7 +43,9 @@ const Footer = () => {
               <div className="footer-item">
                 <h4 className="text-white mb-4">Newsletter</h4>
                 <p className="mb-3">
-                 Stay updated on global trade trends and import-export regulations with our exclusive industry insights and market analysis newsletter.
+                  Stay updated on global trade trends and import-export
+                  regulations with our exclusive industry insights and market
+                  analysis newsletter.
                 </p>
                 <div className="position-relative mx-auto">
                   <input
@@ -72,13 +74,22 @@ const Footer = () => {
               <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-angle-right me-2"></i> Home
               </Link>
-              <Link to="/services" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/services"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Services
               </Link>
-              <Link to="/about" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> About Us
               </Link>
-              <Link to="/contact" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Contact Us
               </Link>
             </div>
@@ -87,19 +98,34 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="text-white mb-4">Our Services</h4>
-              <Link to="/import-services" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/import-services"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Import Services
               </Link>
-              <Link to="/export-services" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/export-services"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Export Services
               </Link>
-              <Link to="/value-added-services" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/value-added-services"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Value Added Services
               </Link>
-              <Link to="/services" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/services"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Logistic Services
               </Link>
-              <Link to="/services" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/services"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <i className="fas fa-angle-right me-2"></i> Textile & Garments
               </Link>
             </div>
@@ -108,16 +134,33 @@ const Footer = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="text-white mb-4">Contact Info</h4>
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-                <i className="fa fa-map-marker-alt me-2"></i> Pimpri Chinchwad, Pune
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <i className="fa fa-map-marker-alt me-2"></i> Pimpri Chinchwad,
+                Pune
               </a>
               {/* <a href="mailto:info@example.com" style={{ textDecoration: "none", color: "inherit" }}>
                 <i className="fas fa-envelope me-2"></i> info@example.com
               </a> */}
-              <a href="mailto:support@example.com" style={{ textDecoration: "none", color: "inherit" }}>
-                <i className="fas fa-envelope me-2"></i> jcmimportexporthub@gmail.com
+              <a
+                href="mailto:support@example.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <i className="fas fa-envelope me-2"></i>{" "}
+                jcmimportexporthub@gmail.com
               </a>
-              <a href="tel:+91-9370936583" style={{ textDecoration: "none", color: "inherit ", marginBottom: "15px" }}>
+              <a
+                href="tel:+91-9370936583"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit ",
+                  marginBottom: "15px",
+                }}
+              >
                 <i className="fas fa-phone me-2"></i> +91 9370936583
               </a>
               {/* <a href="tel:+01234567891" className="mb-3" style={{ textDecoration: "none", color: "inherit" }}>
@@ -126,9 +169,12 @@ const Footer = () => {
               <div className="footer-btn d-flex align-items-center">
                 {[
                   { icon: "facebook-f", url: "https://facebook.com" },
-                  { icon: "twitter", url: "https://twitter.com" },
+                  {
+                    icon: "whatsapp",
+                    url: "https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20your%20services",
+                  },
                   { icon: "instagram", url: "https://instagram.com" },
-                  { icon: "linkedin-in", url: "https://linkedin.com" }
+                  { icon: "linkedin-in", url: "https://linkedin.com" },
                 ].map((social, index) => (
                   <a
                     key={social.icon}
