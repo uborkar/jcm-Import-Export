@@ -9,7 +9,7 @@ export const FoodAgro = () => {
   return (
     <>
       {/* Hero Section - Matching the provided structure */}
-      <div className="et_pb_section et_pb_with_background et_section_regular">
+      <div className="et_pb_section et_pb_with_background et_section_regular mb-5">
         <Container>
           <Row className="et_pb_row align-items-center">
             <Col lg={8} className="et_pb_column">
@@ -93,7 +93,7 @@ export const FoodAgro = () => {
                 </span>
               </div>
             </Col>
-            <Col lg={6} className="et_pb_column et-last-child">
+            <Col lg={6} className="et_pb_column et-last-child py-3">
               <div className="et_pb_text pad-sec et_pb_text_align_left et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
@@ -117,7 +117,7 @@ export const FoodAgro = () => {
       </div>
 
       {/* Additional Content Section */}
-      <div className="et_pb_section et_pb_with_background et_section_regular">
+      <div className="et_pb_section et_pb_with_background et_section_regular mt-5">
         <Container>
           <Row className="et_pb_row">
             <Col lg={12}>

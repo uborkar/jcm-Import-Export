@@ -7,9 +7,8 @@ import shippingImage from "../../../assets/img/logistics-1.jpg"; // You'll need 
 export const Logistics = () => {
   return (
     <>
-     
       {/* Hero Section - Matching the provided structure */}
-      <div className="et_pb_section et_pb_with_background et_section_regular">
+      <div className="et_pb_section et_pb_with_background et_section_regular mb-5">
         <Container>
           <Row className="et_pb_row align-items-center">
             <Col lg={8} className="et_pb_column">
@@ -75,7 +74,7 @@ export const Logistics = () => {
                 </span>
               </div>
             </Col>
-            <Col lg={6} className="et_pb_column et-last-child">
+            <Col lg={6} className="et_pb_column et-last-child py-3">
               <div className="et_pb_text pad-sec et_pb_text_align_left et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="inner-page-top fullpage-banner">
@@ -117,7 +116,7 @@ export const Logistics = () => {
       </div>
 
       {/* Additional Content Section */}
-      <div className="et_pb_section et_pb_with_background et_section_regular">
+      <div className="et_pb_section et_pb_with_background et_section_regular mt-5">
         <Container>
           <Row className="et_pb_row">
             <Col lg={12}>
@@ -128,17 +127,17 @@ export const Logistics = () => {
               </div>
             </Col>
           </Row>
-          <Row className="et_pb_row">
-            <Col md={4} className="et_pb_column">
+          <Row className="et_pb_row row-cols-1 row-cols-md-4 g-4">
+            <Col className="et_pb_column">
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
                     <i
-                      className="fas fa-ship fa-2x"
+                      className="fas fa-ship fa-lg"
                       style={{ color: "#001659" }}
                     ></i>
                   </div>
-                  <h4>International Shipping</h4>
+                  <h5>International Shipping</h5>
                   <p>
                     Sea, air, and land freight services with global coverage,
                     competitive rates, and reliable scheduling for all your
@@ -147,16 +146,16 @@ export const Logistics = () => {
                 </div>
               </div>
             </Col>
-            <Col md={4} className="et_pb_column">
+            <Col className="et_pb_column">
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
                     <i
-                      className="fas fa-warehouse fa-2x"
+                      className="fas fa-warehouse fa-lg"
                       style={{ color: "#001659" }}
                     ></i>
                   </div>
-                  <h4>Warehousing</h4>
+                  <h5>Warehousing</h5>
                   <p>
                     Secure storage facilities with inventory management,
                     distribution services, and temperature-controlled options
@@ -165,20 +164,36 @@ export const Logistics = () => {
                 </div>
               </div>
             </Col>
-            <Col md={4} className="et_pb_column et-last-child">
+            <Col className="et_pb_column">
               <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
                     <i
-                      className="fas fa-file-export fa-2x"
+                      className="fas fa-file-export fa-lg"
                       style={{ color: "#001659" }}
                     ></i>
                   </div>
-                  <h4>Customs Clearance</h4>
+                  <h5>Customs Clearance</h5>
                   <p>
                     Expert handling of customs documentation, regulatory
                     compliance, and tariff classification to ensure smooth
                     customs clearance processes.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col className="et_pb_column">
+              <div className="et_pb_text et_pb_text_align_center et_pb_bg_layout_light">
+                <div className="et_pb_text_inner">
+                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle d-inline-block mb-3">
+                    <i
+                      className="bi bi-globe fa-lg"
+                      style={{ color: "#001659" }}
+                    ></i>
+                  </div>
+                  <h5>Exim Services</h5>
+                  <p>
+                    Efficient EXIM services covering documentation, customs, DGFT compliance, freight forwarding, and logistics coordination for smooth global trade operations.
                   </p>
                 </div>
               </div>
