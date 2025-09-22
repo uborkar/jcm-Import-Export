@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState, useLayoutEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
@@ -8,7 +8,6 @@ import Head from "./components/common/Head";
 import Spinner from "./components/common/Spinner";
 import Topbar from "./components/common/Topbar";
 import Header from "./components/common/Header";
-import SearchModal from "./components/common/SearchModal";
 import Footer from "./components/common/Footer";
 
 // Import pages
@@ -50,6 +49,48 @@ import "animate.css/animate.min.css";
 import "./assets/css/style.css";
 // import BusinessSection from "./components/sections/BusinessSection";
 
+// Scroll to top on route change
+function ScrollToTop() {
+  const location = useLocation();
+  // Disable browser's automatic scroll restoration to avoid jumping
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      const prev = window.history.scrollRestoration;
+      window.history.scrollRestoration = 'manual';
+      return () => {
+        window.history.scrollRestoration = prev;
+      };
+    }
+  }, []);
+  // Do an immediate scroll reset before the browser paints the new route
+  useLayoutEffect(() => {
+    // If navigating to an in-page anchor, scroll to that element
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "auto", block: "start" });
+        return;
+      }
+    }
+    // Reset scroll position on each navigation (cross-browser)
+    const scrollTopNow = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
+    };
+    // First try on next frame (after DOM updates)
+    if (typeof window.requestAnimationFrame === 'function') {
+      window.requestAnimationFrame(scrollTopNow);
+    } else {
+      scrollTopNow();
+    }
+    // Fallback after images/content load and layout settles
+    const t = setTimeout(scrollTopNow, 300);
+    return () => clearTimeout(t);
+  }, [location.pathname, location.hash]);
+  return null;
+}
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -68,11 +109,11 @@ function App() {
       if (navbar) {
         if (window.scrollY > 200) {
           navbar.classList.add("shadow-sm");
-          navbar.style.top = "0px";
         } else {
           navbar.classList.remove("shadow-sm");
-          navbar.style.top = "-200px";
         }
+        // Always keep navbar pinned at the top
+        navbar.style.top = "0px";
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -140,8 +181,9 @@ function App() {
         <Head />
         <Topbar />
         <Header />
-        <SearchModal />
         <SpeedInsights/>
+        {/* Ensure new route loads at the top */}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />

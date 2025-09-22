@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import img1 from "../../assets/img/ceo-e.jpg";
 import img2 from "../../assets/img/head1-e.jpg";
 import img3 from "../../assets/img/head2-e.jpg";
+import img4 from "../../assets/img/head3.jpg";
+import img5 from "../../assets/img/head4.jpg";
 // import img4 from '../../assets/img/MD.jpg';
 // import leadershipBanner from "../../assets/img/leadership-banner.jpg";
 
@@ -33,6 +35,27 @@ const Leadership = () => {
       fullDescription: [
         "Shruti Zunja leads the Exim and Company Secretary Department at JCM Group. With a dynamic personality and expertise in handling EXIM operations and corporate portfolios, she drives excellence in every aspect of her work.",
         "She envisions making JCM 100% compliant with a zero-tolerance approach, ensuring the highest standards of trust and transparency for all stakeholders and customers.",
+      ],
+    },
+    leader4: {
+      name: "Mrs. Shridevi Maindargi",
+      title: "Managing Director",
+      fullDescription: [
+        "Shridevi Maindargi, the Founder Member of JCM Import-Export, currently serves as the Managing Director and a key Board Member of the company, where she plays an instrumental role in shaping the organization’s strategic direction. With her visionary leadership, she has been driving initiatives that are not only focused on building a customer-centric culture, but also on transforming and digitalizing the import and export processes to bring efficiency, transparency, and innovation.",
+        " Her long-term vision ensures that JCM stays ahead in the competitive global trade landscape while consistently delivering enhanced value, reliability, and seamless services to its customers worldwide.",
+      ],
+    },
+    leader5: {
+      name: "Mrs. Shruti Javalkoti",
+      title: "HR Head",
+      fullDescription: [
+        "As a Co-Founder and the HR Head of JCM Group, Mrs. Shruti Javalkotiis the cornerstone of our company's culture and people strategy. With over  5 years of dedicated experience in human resources, she possesses a deep understanding of what it takes to build and nurture a thriving organization.",
+        "Mrs. Shruti is profoundly passionate about people. She champions a workplace environment built on respect, trust, and a genuine sense of family. Her philosophy centers on the belief that when employees feel valued and supported, they are empowered to do their best work.",
+        "Her strategic focus areas include:",
+        "· Cultivating strong employee engagement and retention.",
+        "· Driving talent development and leadership growth.",
+        "· Ensuring HR practices are seamlessly aligned with the JCM Group's long-term vision and values.",
+        "Her leadership ensures that the JCM team remains our greatest asset, united and motivated to achieve shared success.",
       ],
     },
   };
@@ -248,6 +271,107 @@ const Leadership = () => {
                             onMouseEnter={() => setHoveredBtn("btn3")}
                             onMouseLeave={() => setHoveredBtn(null)}
                             onClick={() => openModal("leader3")}
+                          >
+                            Read More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                     {/* Leader 4 */}
+                     <div className="col-md-6 col-lg-4 d-flex">
+                      <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
+                        <div
+                          className="team-member-image"
+                          style={{ overflow: "hidden", height: "380px" }}
+                        >
+                          <img
+                            src={img4}
+                            alt="Shridevi Maindargi"
+                            className="img-fluid w-100 h-150"
+                            style={{ objectFit: "cover" }}
+                          />
+                        </div>
+                        <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
+                          <h4
+                            className="fw-bold mb-2"
+                            style={{ color: "#001659" }}
+                          >
+                            Mrs. Shridevi Maindargi
+                          </h4>
+                          <p
+                            className="text-uppercase mb-3"
+                            style={{ color: "#FF5E15" }}
+                          >
+                            Managing Director
+                          </p>
+                          <div className="mb-4 flex-grow-1">
+                            <p className="text-start">
+                            Shridevi Maindargi, the Founder Member of JCM Import-Export, currently serves as the Managing Director and a key Board Member of the company, where she plays an instrumental role in shaping the organization’s strategic direction....
+                            </p>
+                          </div>
+                          <button
+                            className="btn py-2 px-4 mt-auto"
+                            style={{
+                              backgroundColor:
+                                hoveredBtn === "btn4" ? "#FF5E15" : "#001659",
+                              color: "white",
+                              borderRadius: "0",
+                              border: "none",
+                            }}
+                            onMouseEnter={() => setHoveredBtn("btn4")}
+                            onMouseLeave={() => setHoveredBtn(null)}
+                            onClick={() => openModal("leader4")}
+                          >
+                            Read More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Leader 5 */}
+                    <div className="col-md-6 col-lg-4 d-flex">
+                      <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
+                        <div
+                          className="team-member-image"
+                          style={{ overflow: "hidden", height: "380px" }}
+                        >
+                          <img
+                            src={img5}
+                            alt="Shruti Javalkoti"
+                            className="img-fluid w-100 h-150"
+                            style={{ objectFit: "cover" }}
+                          />
+                        </div>
+                        <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
+                          <h4
+                            className="fw-bold mb-2"
+                            style={{ color: "#001659" }}
+                          >
+                            Mrs. Shruti Javalkoti
+                          </h4>
+                          <p
+                            className="text-uppercase mb-3"
+                            style={{ color: "#FF5E15" }}
+                          >
+                            HR HEAD
+                          </p>
+                          <div className="mb-4 flex-grow-1">
+                            <p className="text-start">
+                            As a Co-Founder and the HR Head of JCM Group, Mrs. Shruti Javalkotiis the cornerstone of our company's culture and people strategy. With over  5 years of dedicated experience in human resources, she possesses a deep understanding of what it takes to build and nurture a thriving organization...
+                            </p>
+                          </div>
+                          <button
+                            className="btn py-2 px-4 mt-auto"
+                            style={{
+                              backgroundColor:
+                                hoveredBtn === "btn5" ? "#FF5E15" : "#001659",
+                              color: "white",
+                              borderRadius: "0",
+                              border: "none",
+                            }}
+                            onMouseEnter={() => setHoveredBtn("btn5")}
+                            onMouseLeave={() => setHoveredBtn(null)}
+                            onClick={() => openModal("leader5")}
                           >
                             Read More
                           </button>
