@@ -561,8 +561,8 @@ export const Textile = () => {
                       </div>
                       <h5 className="fw-bold text-dark">Address</h5>
                       <p className="text-muted mb-0">
-                        Business Center, Trade Tower<br />
-                        Mumbai 400001
+                        <br />
+                        Pimpri Chinchwad, Pune
                       </p>
                     </Col>
 
@@ -572,8 +572,8 @@ export const Textile = () => {
                       </div>
                       <h5 className="fw-bold text-dark">Contact</h5>
                       <p className="text-muted mb-0">
-                        Tel: +91-22-66296100<br />
-                        Mobile: +91-9876543210
+                        <br />
+                        Mobile: +91-9370936583
                       </p>
                     </Col>
 
@@ -583,8 +583,8 @@ export const Textile = () => {
                       </div>
                       <h5 className="fw-bold text-dark">Email</h5>
                       <p className="text-muted mb-0">
-                        info@jcmimportexport.com<br />
-                        textiles@jcmimportexport.com
+                        <br />
+                        jcmimportexporthub@gmail.com
                       </p>
                     </Col>
                   </Row>
