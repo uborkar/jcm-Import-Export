@@ -1,6 +1,6 @@
 # JCM-IMPORT-EXPORT  
 
-*Empowering Global Trade with Seamless Innovation*  
+*Empowering Global Trade with Seamless Innovation*
 
 ![last-commit](https://img.shields.io/github/last-commit/uborkar/jcm-Import-Export?style=flat&logo=git&logoColor=white&color=0080ff)
 ![repo-top-language](https://img.shields.io/github/languages/top/uborkar/jcm-Import-Export?style=flat&color=0080ff)
