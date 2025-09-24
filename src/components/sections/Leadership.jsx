@@ -22,6 +22,14 @@ const Leadership = () => {
       ],
     },
     leader2: {
+      name: "Mrs. Shridevi Maindargi",
+      title: "Managing Director",
+      fullDescription: [
+        "Shridevi Maindargi, the Founder Member of JCM Import-Export, currently serves as the Managing Director and a key Board Member of the company, where she plays an instrumental role in shaping the organization’s strategic direction. With her visionary leadership, she has been driving initiatives that are not only focused on building a customer-centric culture, but also on transforming and digitalizing the import and export processes to bring efficiency, transparency, and innovation.",
+        " Her long-term vision ensures that JCM stays ahead in the competitive global trade landscape while consistently delivering enhanced value, reliability, and seamless services to its customers worldwide.",
+      ],
+    },
+    leader3: {
       name: "Mr. Dhanaji Thore",
       title: "Head – Marketing & Finance",
       fullDescription: [
@@ -29,7 +37,7 @@ const Leadership = () => {
         "His unique expertise allows for a synergistic approach to business strategy, seamlessly aligning market-facing initiatives with robust financial planning. Dhanaji is passionately driven by a vision for global expansion, focusing on establishing JCM as a trusted international brand.",
       ],
     },
-    leader3: {
+    leader4: {
       name: "Mrs. Shruti Zunja",
       title: "Head -Exim & CS",
       fullDescription: [
@@ -37,20 +45,12 @@ const Leadership = () => {
         "She envisions making JCM 100% compliant with a zero-tolerance approach, ensuring the highest standards of trust and transparency for all stakeholders and customers.",
       ],
     },
-    leader4: {
-      name: "Mrs. Shridevi Maindargi",
-      title: "Managing Director",
-      fullDescription: [
-        "Shridevi Maindargi, the Founder Member of JCM Import-Export, currently serves as the Managing Director and a key Board Member of the company, where she plays an instrumental role in shaping the organization’s strategic direction. With her visionary leadership, she has been driving initiatives that are not only focused on building a customer-centric culture, but also on transforming and digitalizing the import and export processes to bring efficiency, transparency, and innovation.",
-        " Her long-term vision ensures that JCM stays ahead in the competitive global trade landscape while consistently delivering enhanced value, reliability, and seamless services to its customers worldwide.",
-      ],
-    },
     leader5: {
-      name: "Mrs. Shruti Javalkoti",
+      name: "Ms. Shruti Javalkoti",
       title: "HR Head",
       fullDescription: [
-        "As a Co-Founder and the HR Head of JCM Group, Mrs. Shruti Javalkotiis the cornerstone of our company's culture and people strategy. With over  5 years of dedicated experience in human resources, she possesses a deep understanding of what it takes to build and nurture a thriving organization.",
-        "Mrs. Shruti is profoundly passionate about people. She champions a workplace environment built on respect, trust, and a genuine sense of family. Her philosophy centers on the belief that when employees feel valued and supported, they are empowered to do their best work.",
+        "As a Co-Founder and the HR Head of JCM Group, Ms. Shruti Javalkoti is the cornerstone of our company's culture and people strategy. With over  5 years of dedicated experience in human resources, she possesses a deep understanding of what it takes to build and nurture a thriving organization.",
+        "Ms. Shruti is profoundly passionate about people. She champions a workplace environment built on respect, trust, and a genuine sense of family. Her philosophy centers on the belief that when employees feel valued and supported, they are empowered to do their best work.",
         "Her strategic focus areas include:",
         "· Cultivating strong employee engagement and retention.",
         "· Driving talent development and leadership growth.",
@@ -112,17 +112,14 @@ const Leadership = () => {
                 <div className="container">
                   <div className="row g-4 justify-content-center">
                     {/* Leader 1 */}
-                    <div className="col-md-6 col-lg-4 d-flex">
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-1">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div
-                          className="team-member-image"
-                          style={{ overflow: "hidden", height: "380px" }}
-                        >
+                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
                             src={img1}
                             alt="Siddharam Maindargi"
-                            className="img-fluid w-100 h-150"
-                            style={{ objectFit: "cover" }}
+                            className="img-fluid w-100"
+                            style={{ objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" }}
                           />
                         </div>
                         <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
@@ -169,17 +166,64 @@ const Leadership = () => {
                     </div>
 
                     {/* Leader 2 */}
-                    <div className="col-md-6 col-lg-4 d-flex">
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-2">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div
-                          className="team-member-image"
-                          style={{ overflow: "hidden", height: "380px" }}
-                        >
+                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
+                          <img
+                            src={img4}
+                            alt="Shridevi Maindargi"
+                            className="img-fluid w-100"
+                            style={{ objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" }}
+                          />
+                        </div>
+                        <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
+                          <h4
+                            className="fw-bold mb-2"
+                            style={{ color: "#001659" }}
+                          >
+                            Mrs. Shridevi Maindargi
+                          </h4>
+                          <p
+                            className="text-uppercase mb-3"
+                            style={{ color: "#FF5E15" }}
+                          >
+                            Managing Director
+                          </p>
+                          <div className="mb-4 flex-grow-1">
+                            <p className="text-start">
+                              Shridevi Maindargi, the Founder Member of JCM Import-Export, currently serves as the Managing Director and a key Board Member of the company, where she plays an instrumental role in shaping the organization’s strategic direction...
+                            </p>
+                          </div>
+                          <button
+                            className="btn py-2 px-4 mt-auto"
+                            style={{
+                              backgroundColor:
+                                hoveredBtn === "btn2" ? "#FF5E15" : "#001659",
+                              color: "white",
+                              borderRadius: "0",
+                              border: "none",
+                            }}
+                            onMouseEnter={() => setHoveredBtn("btn2")}
+                            onMouseLeave={() => setHoveredBtn(null)}
+                            onClick={() => openModal("leader2")}
+                          >
+                            Read More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                               {/* Force a new row after the first two on large screens without changing widths */}
+                    <div className="w-100 d-none d-lg-block order-lg-3"></div>
+
+                    {/* Leader 3 */}
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-4">
+                      <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
+                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
                             src={img2}
                             alt="Dhanaji Thore"
-                            className="img-fluid w-100 h-150"
-                            style={{ objectFit: "cover" }}
+                            className="img-fluid w-100"
+                            style={{ objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" }}
                           />
                         </div>
                         <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
@@ -208,14 +252,14 @@ const Leadership = () => {
                             className="btn py-2 px-4 mt-auto"
                             style={{
                               backgroundColor:
-                                hoveredBtn === "btn2" ? "#FF5E15" : "#001659",
+                                hoveredBtn === "btn3" ? "#FF5E15" : "#001659",
                               color: "white",
                               borderRadius: "0",
                               border: "none",
                             }}
-                            onMouseEnter={() => setHoveredBtn("btn2")}
+                            onMouseEnter={() => setHoveredBtn("btn3")}
                             onMouseLeave={() => setHoveredBtn(null)}
-                            onClick={() => openModal("leader2")}
+                            onClick={() => openModal("leader3")}
                           >
                             Read More
                           </button>
@@ -223,18 +267,15 @@ const Leadership = () => {
                       </div>
                     </div>
 
-                    {/* Leader 3 */}
-                    <div className="col-md-6 col-lg-4 d-flex">
+                    {/* Leader 4 */}
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-5">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div
-                          className="team-member-image"
-                          style={{ overflow: "hidden", height: "380px" }}
-                        >
+                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
                             src={img3}
                             alt="Shruti Zunja"
-                            className="img-fluid w-100 h-150"
-                            style={{ objectFit: "cover" }}
+                            className="img-fluid w-100"
+                            style={{ objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" }}
                           />
                         </div>
                         <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
@@ -263,57 +304,6 @@ const Leadership = () => {
                             className="btn py-2 px-4 mt-auto"
                             style={{
                               backgroundColor:
-                                hoveredBtn === "btn3" ? "#FF5E15" : "#001659",
-                              color: "white",
-                              borderRadius: "0",
-                              border: "none",
-                            }}
-                            onMouseEnter={() => setHoveredBtn("btn3")}
-                            onMouseLeave={() => setHoveredBtn(null)}
-                            onClick={() => openModal("leader3")}
-                          >
-                            Read More
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                     {/* Leader 4 */}
-                     <div className="col-md-6 col-lg-4 d-flex">
-                      <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div
-                          className="team-member-image"
-                          style={{ overflow: "hidden", height: "380px" }}
-                        >
-                          <img
-                            src={img4}
-                            alt="Shridevi Maindargi"
-                            className="img-fluid w-100 h-150"
-                            style={{ objectFit: "cover" }}
-                          />
-                        </div>
-                        <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
-                          <h4
-                            className="fw-bold mb-2"
-                            style={{ color: "#001659" }}
-                          >
-                            Mrs. Shridevi Maindargi
-                          </h4>
-                          <p
-                            className="text-uppercase mb-3"
-                            style={{ color: "#FF5E15" }}
-                          >
-                            Managing Director
-                          </p>
-                          <div className="mb-4 flex-grow-1">
-                            <p className="text-start">
-                            Shridevi Maindargi, the Founder Member of JCM Import-Export, currently serves as the Managing Director and a key Board Member of the company, where she plays an instrumental role in shaping the organization’s strategic direction....
-                            </p>
-                          </div>
-                          <button
-                            className="btn py-2 px-4 mt-auto"
-                            style={{
-                              backgroundColor:
                                 hoveredBtn === "btn4" ? "#FF5E15" : "#001659",
                               color: "white",
                               borderRadius: "0",
@@ -328,18 +318,16 @@ const Leadership = () => {
                         </div>
                       </div>
                     </div>
+
                     {/* Leader 5 */}
-                    <div className="col-md-6 col-lg-4 d-flex">
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-5">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
-                        <div
-                          className="team-member-image"
-                          style={{ overflow: "hidden", height: "380px" }}
-                        >
+                        <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
                             src={img5}
                             alt="Shruti Javalkoti"
-                            className="img-fluid w-100 h-150"
-                            style={{ objectFit: "cover" }}
+                            className="img-fluid w-100"
+                            style={{ objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" }}
                           />
                         </div>
                         <div className="team-member-description p-4 d-flex flex-column flex-grow-1">
@@ -347,7 +335,7 @@ const Leadership = () => {
                             className="fw-bold mb-2"
                             style={{ color: "#001659" }}
                           >
-                            Mrs. Shruti Javalkoti
+                            Ms. Shruti Javalkoti
                           </h4>
                           <p
                             className="text-uppercase mb-3"
@@ -357,7 +345,7 @@ const Leadership = () => {
                           </p>
                           <div className="mb-4 flex-grow-1">
                             <p className="text-start">
-                            As a Co-Founder and the HR Head of JCM Group, Mrs. Shruti Javalkotiis the cornerstone of our company's culture and people strategy. With over  5 years of dedicated experience in human resources, she possesses a deep understanding of what it takes to build and nurture a thriving organization...
+                            As a Co-Founder and the HR Head of JCM Group, Ms. Shruti Javalkoti is the cornerstone of our company's culture and people strategy. With over  5 years of dedicated experience in human resources, she possesses a deep understanding of what it takes to build and nurture a thriving organization...
                             </p>
                           </div>
                           <button
@@ -414,7 +402,7 @@ const Leadership = () => {
                   (paragraph, index) => (
                     <p key={index} className={index > 0 ? "mt-3" : ""}>
                       {paragraph}
-                    </p>
+                    </p> 
                   )
                 )}
               </div>
