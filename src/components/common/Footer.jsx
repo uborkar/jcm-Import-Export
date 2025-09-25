@@ -158,14 +158,17 @@ const Footer = () => {
                 style={{
                   textDecoration: "none",
                   color: "inherit ",
-                  marginBottom: "15px",
                 }}
               >
                 <i className="fas fa-phone me-2"></i> +91 9370936583
               </a>
-              {/* <a href="tel:+01234567891" className="mb-3" style={{ textDecoration: "none", color: "inherit" }}>
-                <i className="fas fa-print me-2"></i> +012 345 67891
-              </a> */}
+              <a
+                href="tel:+91-8698269956"
+                className="mb-3"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <i className="fas fa-phone me-2"></i> +91 8698269956
+              </a>
               <div className="footer-btn d-flex align-items-center">
                 {[
                   { icon: "facebook-f", url: "https://facebook.com" },
