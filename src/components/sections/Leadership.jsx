@@ -112,7 +112,7 @@ const Leadership = () => {
                 <div className="container">
                   <div className="row g-4 justify-content-center">
                     {/* Leader 1 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-1">
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-2">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
@@ -166,7 +166,7 @@ const Leadership = () => {
                     </div>
 
                     {/* Leader 2 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-2">
+                    <div className="col-md-6 col-lg-4 d-flex order-lg-1">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
