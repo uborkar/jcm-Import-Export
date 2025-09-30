@@ -159,7 +159,8 @@ const Testimonial = () => {
                 border: 'none',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                borderRadius: '4px'
               }}
             >
               <i className="fas fa-arrow-left text-white"></i>
@@ -176,7 +177,8 @@ const Testimonial = () => {
                 border: 'none',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                borderRadius: '4px'
               }}
             >
               <i className="fas fa-arrow-right text-white"></i>
@@ -255,21 +257,13 @@ const Testimonial = () => {
               style={{
                 width: '12px',
                 height: '12px',
-                padding: 0
+                padding: 0,
+                borderRadius: '2px'
               }}
             ></button>
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        .square-btn {
-          border-radius: 4px !important;
-        }
-        .square-indicator {
-          border-radius: 2px !important;
-        }
-      `}</style>
     </div>
   );
 };

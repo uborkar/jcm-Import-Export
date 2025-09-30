@@ -5,8 +5,7 @@ import img2 from "../../assets/img/head1-e.jpg";
 import img3 from "../../assets/img/head2-e.jpg";
 import img4 from "../../assets/img/head3.jpg";
 import img5 from "../../assets/img/head4.jpg";
-// import img4 from '../../assets/img/MD.jpg';
-// import leadershipBanner from "../../assets/img/leadership-banner.jpg";
+
 
 const Leadership = () => {
   const [hoveredBtn, setHoveredBtn] = useState(null);
@@ -112,7 +111,7 @@ const Leadership = () => {
                 <div className="container">
                   <div className="row g-4 justify-content-center">
                     {/* Leader 1 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-2">
+                    <div className="col-md-6 col-lg-4 d-flex order-2 order-lg-2">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
@@ -166,7 +165,7 @@ const Leadership = () => {
                     </div>
 
                     {/* Leader 2 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-1">
+                    <div className="col-md-6 col-lg-4 d-flex order-1 order-lg-1">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
@@ -216,7 +215,7 @@ const Leadership = () => {
                     <div className="w-100 d-none d-lg-block order-lg-3"></div>
 
                     {/* Leader 3 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-4">
+                    <div className="col-md-6 col-lg-4 d-flex order-3 order-lg-4">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
@@ -268,7 +267,7 @@ const Leadership = () => {
                     </div>
 
                     {/* Leader 4 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-5">
+                    <div className="col-md-6 col-lg-4 d-flex order-4 order-lg-5">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img
@@ -320,7 +319,7 @@ const Leadership = () => {
                     </div>
 
                     {/* Leader 5 */}
-                    <div className="col-md-6 col-lg-4 d-flex order-lg-5">
+                    <div className="col-md-6 col-lg-4 d-flex order-5 order-lg-6">
                       <div className="team-member-card text-center d-flex flex-column w-100 shadow-sm">
                         <div className="team-member-image" style={{ overflow: "hidden", height: "380px" }}>
                           <img

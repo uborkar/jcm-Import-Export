@@ -200,6 +200,29 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      
+      {/* Copyright Section */}
+      <div className="container-fluid py-2" style={{ backgroundColor: "#001659", borderTop: "1px solid #333" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <p className="mb-0 text-white" style={{ fontSize: "14px", fontFamily: "Arial, sans-serif" }}>
+                © 2025 JCM-IMPORTEXPORTHUB. All rights reserved. | Designed By{" "}
+                <a 
+                  href="https://www.infoyashonand.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#FF5E15", textDecoration: "none", fontSize: "14px", fontFamily: "Arial, sans-serif" }}
+                  onMouseEnter={(e) => e.target.style.textDecoration = "underline"}
+                  onMouseLeave={(e) => e.target.style.textDecoration = "none"}
+                >
+                  www.infoyashonand.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
